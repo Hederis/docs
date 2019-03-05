@@ -109,6 +109,7 @@ counter = 1
 cat = "About"
 
 for inputfile in allfiles:
+    print(inputfile)
     myroot = etree.parse(os.path.abspath(inputpath + inputfile))
 
     for section in myroot.xpath(".//section|.//nav|.//div"):
