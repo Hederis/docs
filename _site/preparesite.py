@@ -109,58 +109,59 @@ counter = 1
 cat = "About"
 
 for inputfile in allfiles:
-    print(inputfile)
-    myroot = etree.parse(os.path.abspath(inputpath + inputfile))
+    if len(inputfile) == 17:
+        print(inputfile)
+        myroot = etree.parse(os.path.abspath(inputpath + inputfile))
 
-    for section in myroot.xpath(".//section|.//nav|.//div"):
-        if section.get("data-type") is not None and section.get("data-type") in elarr:
-            myid = section.get("id")
-            mytitle = names[myid]
-            if section.get("data-type") == "part":
-                cat = mytitle
-                newhead = etree.Element("h3")
-                newhead.text = "Topics in this section:"
-                ultext = "{% for post in site.posts reversed %}{%if post.categories contains '" + cat + "' %}"
-                atext = "{{ post.title }}"
-                litail = "{% endif %}{% endfor %}"
-                newul = etree.Element("ul")
-                newul.set("class","")
-                newul.text = ultext
-                newli = etree.Element("li")
-                newli.set("class","")
-                newa = etree.Element("a")
-                newa.set("class","")
-                newa.set("href","{{ post.url }}")
-                newa.text = atext
-                newli.append(newa)
-                newul.append(newli)
-                newli.tail = litail
-                section.append(newhead)
-                section.append(newul)
+        for section in myroot.xpath(".//section|.//nav|.//div"):
+            if section.get("data-type") is not None and section.get("data-type") in elarr:
+                myid = section.get("id")
+                mytitle = names[myid]
+                if section.get("data-type") == "part":
+                    cat = mytitle
+                    newhead = etree.Element("h3")
+                    newhead.text = "Topics in this section:"
+                    ultext = "{% for post in site.posts reversed %}{%if post.categories contains '" + cat + "' %}"
+                    atext = "{{ post.title }}"
+                    litail = "{% endif %}{% endfor %}"
+                    newul = etree.Element("ul")
+                    newul.set("class","")
+                    newul.text = ultext
+                    newli = etree.Element("li")
+                    newli.set("class","")
+                    newa = etree.Element("a")
+                    newa.set("class","")
+                    newa.set("href","{{ post.url }}")
+                    newa.text = atext
+                    newli.append(newa)
+                    newul.append(newli)
+                    newli.tail = litail
+                    section.append(newhead)
+                    section.append(newul)
 
-    for img in myroot.xpath(".//img"):
-        src = img.get("src")
-        if src is not None:
-            newsrc = "/images/" + src
-            img.set("src", newsrc)
+        for img in myroot.xpath(".//img"):
+            src = img.get("src")
+            if src is not None:
+                newsrc = "/images/" + src
+                img.set("src", newsrc)
 
-    for link in myroot.findall(".//a"):
-        href = link.get("href")
-        if href is not None and re.match("^#",href) is not None:
-            newhref = fixLink(fullroot, link, elarr)
-            link.set("href", newhref)
+        for link in myroot.findall(".//a"):
+            href = link.get("href")
+            if href is not None and re.match("^#",href) is not None:
+                newhref = fixLink(fullroot, link, elarr)
+                link.set("href", newhref)
 
-    htmlstr = etree.tostring(section)
-    header = str.encode('---\nlayout: default\ntitle:  "' + mytitle + '"\ncategories: ['+ cat + ']\npublished: true\n---\n\n')
+        htmlstr = etree.tostring(section)
+        header = str.encode('---\nlayout: default\ntitle:  "' + mytitle + '"\ncategories: ['+ cat + ']\npublished: true\n---\n\n')
 
-    d = datetime.datetime.now()
-    filetitle = re.sub("[^a-zA-Z0-9-_]","",mytitle)
-    filename = outputpath + str(d.year) + "-" + "{0:0=2d}".format(d.month) + "-" + "{0:0=2d}".format(d.day-1) + "-" + "{0:0=2d}".format(counter) + "-" + filetitle + ".md"
+        d = datetime.datetime.now()
+        filetitle = re.sub("[^a-zA-Z0-9-_]","",mytitle)
+        filename = outputpath + str(d.year) + "-" + "{0:0=2d}".format(d.month) + "-" + "{0:0=2d}".format(d.day-1) + "-" + "{0:0=2d}".format(counter) + "-" + filetitle + ".md"
 
-    f = open(filename, 'wb')
-    f.write(header)
-    f.write(htmlstr)
-    f.close()
-    print(filename)
+        f = open(filename, 'wb')
+        f.write(header)
+        f.write(htmlstr)
+        f.close()
+        print(filename)
 
-    counter += 1
+        counter += 1
