@@ -113,7 +113,7 @@ for inputfile in allfiles:
         print(inputfile)
         myroot = etree.parse(os.path.abspath(inputpath + inputfile))
 
-        for section in myroot.xpath(".//section|.//nav|.//div"):
+        for section in myroot.xpath(".//body/section|.//body/nav|.//body/div"):
             if section.get("data-type") is not None and section.get("data-type") in elarr:
                 myid = section.get("id")
                 mytitle = names[myid]

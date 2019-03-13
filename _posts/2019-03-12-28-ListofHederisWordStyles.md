@@ -5,7 +5,8 @@ categories: [Appendix]
 published: true
 ---
 
-<section class="hwprsubsectionstart" data-hederis-type="hwprsubsectionstart" id="p8iQYRqjL" data-type="subsection"><h1 data-hederis-type="hblktitle" class="hblktitle" id="plSpHfogQ">Paragraphs</h1>
+<section data-type="appendix" class="hsecappendix" data-hederis-type="hsecappendix" id="plpYkfgZk"><h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="pMfXo4DXF">List of Hederis Word Styles</h1>
+    <section class="hwprsubsectionstart" data-hederis-type="hwprsubsectionstart" id="p8iQYRqjL" data-type="subsection"><h1 data-hederis-type="hblktitle" class="hblktitle" id="plSpHfogQ">Paragraphs</h1>
     <dl class="hwprdef-liststart" data-hederis-type="hwprdef-liststart" id="pONuWiknd"><dt data-hederis-type="hblkdefterm" class="hblkdefterm" id="ps3wjRvP3">HED Address</dt>
     <dd class="hblkdefinition" data-hederis-type="hblkdefinition" id="liLDBtVywf"><p class="hblkdefinition" data-hederis-type="hblkdefinition" id="pT0uW6nRi">An address, for example in a letter, on a copyright page, etc.</p></dd>
     <dt data-hederis-type="hblkdefterm" class="hblkdefterm" id="p4GUXfeIJ">HED Attribution</dt>
@@ -65,5 +66,6 @@ published: true
     <dd class="hblkdefinition" data-hederis-type="hblkdefinition" id="liiyhoYXAJ"><p class="hblkdefinition" data-hederis-type="hblkdefinition" id="pQEZE9BaG">Titles of wrappers and sub-sections. For example, for a sidebar title, extract title, sub-section title, etc.</p></dd>
     <dt data-hederis-type="hblkdefterm" class="hblkdefterm" id="pcHfT1HDK">HED separator</dt>
     <dd id="pkq6AZlOO"/></dl>
+    </section>
     </section>
     
