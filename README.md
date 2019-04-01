@@ -2,7 +2,7 @@
 
 Make changes to the Word file in this repo.
 
-Run through theingestion toolchain and extract sections.
+Run through the ingestion toolchain and extract sections.
 
 Run the preparesite.py script that is in this repo, providing the required paths and filenames, e.g.: 
 
