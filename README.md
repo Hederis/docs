@@ -1,6 +1,6 @@
 # Process
 
-Make changes to the Word file in this repo.
+Make changes to the Word file in this repo. Make sure that you give every new section you add a custom ID attribute (read the docs to learn how to do this) - this id will be used as the permalink for that section.
 
 Run through the ingestion toolchain and extract sections.
 
