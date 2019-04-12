@@ -504,6 +504,10 @@ aside p.hblktype {
   text-align: center;
 }
 
+table {
+  border: 1px solid #cccccc;
+}
+
 /*@media all and (max-width: 480px) { }*/
 @media all and (max-width: 980px) {}
 @media all and (max-width: 768px) {
