@@ -505,7 +505,18 @@ aside p.hblktype {
 }
 
 table {
+  
+}
+
+td {
   border: 1px solid #cccccc;
+  padding: 2px;
+}
+
+div.hwprliteral {
+  border: 1px solid #cccccc;
+  font-family: monospace;
+  font-size: 0.9em;
 }
 
 /*@media all and (max-width: 480px) { }*/
