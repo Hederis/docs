@@ -13,10 +13,15 @@ nav.navbar {
 
 ul.navbar-nav.nav {
   display: block;
+  padding-bottom: 20px;
 }
 
 div.mobile_nav_hider, div.nav {
   display: block;
+}
+
+ul.navbar-nav.nav.collapse:not(.show) {
+  display: none;
 }
 
 #pricing nav h2 {
