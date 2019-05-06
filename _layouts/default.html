@@ -36,8 +36,10 @@
         <div class="mobile_nav_hider" id="navbarTogglerDemo03">
           <h2>Help Topics</h2>
           {% for category in site.categories %}
-          <h3>{{ category[0] }}</h3>
-          <ul class="navbar-nav nav flex-column">
+
+          <p><a class="btn btn-primary" data-toggle="collapse" href="#collapse{{ category[0] | strip_html | remove:' ' }}" role="button" aria-expanded="true" aria-controls="collapse{{ category[0] | strip_html | remove:' ' }}">{{ category[0] }}</a></p>
+          
+          <ul class="navbar-nav nav flex-column  collapse" id="collapse{{ category[0] | strip_html | remove:' ' }}">
             {% for post in category[1] reversed %}
               <li class="nav-item"><a class="nav-link pl-0" href="{{ post.url }}">{{ post.title }}</a></li>
             {% endfor %}
