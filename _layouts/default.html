@@ -35,6 +35,7 @@
       <nav class="navbar">
         <div class="mobile_nav_hider" id="navbarTogglerDemo03">
           <h2>Help Topics</h2>
+          <p>Click a topic to see all related articles</p>
           {% for category in site.categories %}
 
           <p><a class="btn btn-primary" data-toggle="collapse" href="#collapse{{ category[0] | strip_html | remove:' ' }}" role="button" aria-expanded="true" aria-controls="collapse{{ category[0] | strip_html | remove:' ' }}">{{ category[0] }}</a></p>
