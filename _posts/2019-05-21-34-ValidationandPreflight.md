@@ -1,0 +1,11 @@
+---
+layout: default
+title:  "Validation and Preflight"
+permalink:  /validation-home/
+categories: [Validation and Preflight]
+published: true
+---
+
+<div data-type="part" class="hsecpart" data-hederis-type="hsecpart" id="validation-home" data-pi-attrs="id: validation-home" role="doc-part" title="Validation and Preflight"><h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="p4z5AUFuj">Validation and Preflight</h1>
+    <h3>Topics in this section:</h3><ul class="">{% for post in site.posts reversed %}{%if post.categories contains 'Validation and Preflight' %}<li class=""><a class="" href="{{ post.url }}">{{ post.title }}</a></li>{% endif %}{% endfor %}</ul></div>
+    
