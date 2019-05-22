@@ -61,6 +61,14 @@
       <div class="row">
           <div class="col-md-12">
             {{ content }}
+            <div class="PageNavigation text-center">
+              {% if page.previous.url %}
+                <a class="prev" href="{{page.previous.url}}">&laquo; Prev topic: &ldquo;{{page.previous.title}}&rdquo;</a>
+              {% endif %}
+              {% if page.next.url %}
+                &nbsp; | &nbsp;<a class="next" href="{{page.next.url}}">Next topic: &ldquo;{{page.next.title}} &rdquo;&raquo;</a>
+              {% endif %}
+            </div>
           </div>
       </div>
     </div>
