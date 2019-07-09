@@ -36,14 +36,14 @@ ul.navbar-nav.nav.collapse:not(.show) {
   border-bottom: 1px solid #21172E;
 }
 
-li.nav-item {
+li.nav-item:not(.bsauto) {
   font-size: 1.1rem;
   margin-left: 10px;
   text-indent: -10px;
   list-style-type: disc;
 }
 
-#pricing li.nav-item {
+#pricing li.nav-item:not(.bsauto) {
   font-size: 1.1rem;
 }
 
