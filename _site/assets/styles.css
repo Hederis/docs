@@ -366,7 +366,7 @@ div.footer {
   padding-left: 16px;
 }
 
-#pricing li, #services li {
+#pricing li:not(.bsauto), #services li:not(.bsauto) {
   padding-left: 4px;
 }
 

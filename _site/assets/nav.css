@@ -10,7 +10,7 @@ a.nav-link {
   color: #21172E;
 }
 
-#pricing li.nav-item {
+#pricing li.nav-item:not(.bsauto) {
     font-size: 1.5em;
 }
 
