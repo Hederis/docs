@@ -34,18 +34,44 @@
       <div class="mobile_nav_btn"><span id="stripe_1"></span><span id="stripe_2"></span><span id="stripe_3"></span></div>
       <nav class="navbar">
         <div class="mobile_nav_hider" id="navbarTogglerDemo03">
+
           <h2>Help Topics</h2>
           <p>Click a topic to see all related articles</p>
-          {% for category in site.categories %}
 
-          <p><a class="btn btn-primary" data-toggle="collapse" href="#collapse{{ category[0] | strip_html | remove:' ' }}" role="button" aria-expanded="true" aria-controls="collapse{{ category[0] | strip_html | remove:' ' }}">{{ category[0] }}</a></p>
-          
-          <ul class="navbar-nav nav flex-column collapse" id="collapse{{ category[0] | strip_html | remove:' ' }}">
-            {% for post in category[1] reversed %}
-              <li class="nav-item"><a class="nav-link pl-0" href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
+          <ul class="nav nav-tabs mb-3">
+            <li class="nav-item">
+              <a class="nav-link active" id="typeset-tab" data-toggle="tab" href="#typesettab" role="tab" aria-controls="typesettab" aria-selected="true">Typeset</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="convert-tab" data-toggle="tab" href="#converttab" role="tab" aria-controls="converttab" aria-selected="false">Convert</a>
+            </li>
           </ul>
-        {% endfor %}
+
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="typesettab" role="tabpanel" aria-labelledby="typeset-tab">
+              {% for category in site.categories %}
+                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypeset{{ category[0] | strip_html | remove:' ' }}" role="button" aria-expanded="true" aria-controls="collapseTypeset{{ category[0] | strip_html | remove:' ' }}">{{ category[0] }}</a></p>
+                <ul class="navbar-nav nav flex-column collapse" id="collapseTypeset{{ category[0] | strip_html | remove:' ' }}">
+                  {% for post in category[1] reversed %}
+                    {% if post.tags contains 'typeset' %}
+                      <li class="nav-item"><a class="nav-link pl-0" href="{{ post.url }}">{{ post.title | strip_html }}</a></li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              {% endfor %}
+            </div>
+            <div class="tab-pane fade" id="converttab" role="tabpanel" aria-labelledby="convert-tab">
+              {% for category in site.categories %}
+              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvert{{ category[0] | strip_html | remove:' ' }}" role="button" aria-expanded="true" aria-controls="collapseConvert{{ category[0] | strip_html | remove:' ' }}">{{ category[0] }}</a></p>
+              <ul class="navbar-nav nav flex-column collapse" id="collapseConvert{{ category[0] | strip_html | remove:' ' }}">
+                {% for post in category[1] reversed %}
+                  {% if post.tags contains 'convert' %}
+                    <li class="nav-item"><a class="nav-link pl-0" href="{{ post.url }}">{{ post.title | strip_html }}</a></li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% endfor %}
+          </div>
 <!--           <ul class="navbar-nav nav flex-column">
             {% for post in site.posts reversed %}
               <li class="nav-item">
@@ -54,6 +80,7 @@
             {% endfor %}
           </ul> -->
         </div>
+      </div>
       </nav>
     </div>
 
@@ -94,7 +121,7 @@
 <script>
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
-  })
+  });
 </script>
 
 </body>

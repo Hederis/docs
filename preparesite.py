@@ -116,6 +116,7 @@ for inputfile in allfiles:
         section = myroot.xpath(".//body/section|.//body/nav|.//body/div")[0]
         myid = section.get("id")
         mytitle = names[myid]
+        tag = "tags: []\n"
         if section.get("data-type") == "part":
             cat = mytitle
             newhead = etree.Element("h3")
@@ -137,6 +138,12 @@ for inputfile in allfiles:
             newli.tail = litail
             section.append(newhead)
             section.append(newul)
+        # apply the convert or typeset tag
+        else:
+            mytags = section.get("data-tags")
+            if mytags:
+                tag = "tags: [" + mytags + "]\n"
+
 
         for img in myroot.xpath(".//img"):
             src = img.get("src")
@@ -151,7 +158,7 @@ for inputfile in allfiles:
                 link.set("href", newhref)
 
         htmlstr = etree.tostring(section)
-        header = str.encode('---\nlayout: default\ntitle:  "' + mytitle + '"\npermalink:  /' + myid + '/\ncategories: ['+ cat + ']\npublished: true\n---\n\n')
+        header = str.encode('---\nlayout: default\ntitle:  "' + mytitle + '"\npermalink:  /' + myid + '/\ncategories: ['+ cat + ']\n' + tag + 'published: true\n---\n\n')
 
         d = datetime.datetime.now()
         filetitle = re.sub("[^a-zA-Z0-9-_]","",mytitle)

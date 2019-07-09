@@ -34,140 +34,431 @@
       <div class="mobile_nav_btn"><span id="stripe_1"></span><span id="stripe_2"></span><span id="stripe_3"></span></div>
       <nav class="navbar">
         <div class="mobile_nav_hider" id="navbarTogglerDemo03">
+
           <h2>Help Topics</h2>
           <p>Click a topic to see all related articles</p>
-          
 
-          <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseAbout" role="button" aria-expanded="true" aria-controls="collapseAbout">About</a></p>
-          
-          <ul class="navbar-nav nav flex-column collapse" id="collapseAbout">
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/overview/">Overview</a></li>
-            
+          <ul class="nav nav-tabs mb-3">
+            <li class="nav-item">
+              <a class="nav-link active" id="typeset-tab" data-toggle="tab" href="#typesettab" role="tab" aria-controls="typesettab" aria-selected="true">Typeset</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="convert-tab" data-toggle="tab" href="#converttab" role="tab" aria-controls="converttab" aria-selected="false">Convert</a>
+            </li>
           </ul>
-        
 
-          <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseImages" role="button" aria-expanded="true" aria-controls="collapseImages">Images</a></p>
-          
-          <ul class="navbar-nav nav flex-column collapse" id="collapseImages">
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="typesettab" role="tabpanel" aria-labelledby="typeset-tab">
+              
+                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypesetAbout" role="button" aria-expanded="true" aria-controls="collapseTypesetAbout">About</a></p>
+                <ul class="navbar-nav nav flex-column collapse" id="collapseTypesetAbout">
+                  
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/guided-demo/">Guided Demo</a></li>
+                    
+                  
+                    
+                  
+                </ul>
+              
+                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypesetImages" role="button" aria-expanded="true" aria-controls="collapseTypesetImages">Images</a></p>
+                <ul class="navbar-nav nav flex-column collapse" id="collapseTypesetImages">
+                  
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/add-an-image/">Add an image in Word</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/images-with-captions-etc/">Images with captions, sources, or other extra content</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/upload-a-cover/">Upload a cover file</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/include-full-page-images/">Include full-page images in the PDF</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/grayscale-images/">Grayscale images in the PDF</a></li>
+                    
+                  
+                </ul>
+              
+                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypesetManuscriptsandBookText" role="button" aria-expanded="true" aria-controls="collapseTypesetManuscriptsandBookText">Manuscripts and Book Text</a></p>
+                <ul class="navbar-nav nav flex-column collapse" id="collapseTypesetManuscriptsandBookText">
+                  
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/upload-a-manuscript/">Upload a Manuscript</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/semantic-tagging/">Semantic Tagging</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/paragraphs-wrappers-and-sections/">Paragraphs, Wrappers, and Sections</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/fine-tune-styles/">Fine-tune Word Styles</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/add-a-wrapper/">Add a Wrapper</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/add-a-section/">Add a Section</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/autogen-a-toc/">Automatically Generate a Table of Contents</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/setup-a-toc/">Set up a Table of Contents Manually</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/include-custom-content/">Include content only in the PDF or EPUB</a></li>
+                    
+                  
+                </ul>
+              
+                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypesetDesign" role="button" aria-expanded="true" aria-controls="collapseTypesetDesign">Design</a></p>
+                <ul class="navbar-nav nav flex-column collapse" id="collapseTypesetDesign">
+                  
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/typeset-view-toolbar/">The top-right toolbar: Single View, Guides, Grid, and Run Layout</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/typeset-left-sidebar/">The left sidebar: Design tools</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/typeset-general-design/">General Page Design</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/typeset-text-design/">Sections & Text</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/typeset-sect-design/">Designing SECT elements (sections)</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/typeset-box-design/">Designing BOX elements (wrappers)</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/typeset-para-design/">Designing text paragraphs</a></li>
+                    
+                  
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/add-printer-marks/">Add printer marks</a></li>
+                    
+                  
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/custom-design/">Add special layout instructions</a></li>
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/custom-design-templates/">Upload a custom design template</a></li>
+                    
+                  
+                </ul>
+              
+                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypesetPaging" role="button" aria-expanded="true" aria-controls="collapseTypesetPaging">Paging</a></p>
+                <ul class="navbar-nav nav flex-column collapse" id="collapseTypesetPaging">
+                  
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/page-layout-menu/">Adjusting letter spacing, line breaks, and page breaks (PDF-only)</a></li>
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                </ul>
+              
+                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypesetWorkingwithCode" role="button" aria-expanded="true" aria-controls="collapseTypesetWorkingwithCode">Working with Code</a></p>
+                <ul class="navbar-nav nav flex-column collapse" id="collapseTypesetWorkingwithCode">
+                  
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/custom-attributes/">Add custom HTML attributes</a></li>
+                    
+                  
+                </ul>
+              
+                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypesetValidationandPreflight" role="button" aria-expanded="true" aria-controls="collapseTypesetValidationandPreflight">Validation and Preflight</a></p>
+                <ul class="navbar-nav nav flex-column collapse" id="collapseTypesetValidationandPreflight">
+                  
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/pdf-preflight/">PDF preflight and prepress</a></li>
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/epub-validation/">EPUB Validation</a></li>
+                    
+                  
+                </ul>
+              
+                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypesetAppendix" role="button" aria-expanded="true" aria-controls="collapseTypesetAppendix">Appendix</a></p>
+                <ul class="navbar-nav nav flex-column collapse" id="collapseTypesetAppendix">
+                  
+                    
+                  
+                    
+                  
+                    
+                      <li class="nav-item"><a class="nav-link pl-0" href="/list-of-word-styles/">List of Hederis Word Styles</a></li>
+                    
+                  
+                </ul>
+              
+            </div>
+            <div class="tab-pane fade" id="converttab" role="tabpanel" aria-labelledby="convert-tab">
+              
+              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvertAbout" role="button" aria-expanded="true" aria-controls="collapseConvertAbout">About</a></p>
+              <ul class="navbar-nav nav flex-column collapse" id="collapseConvertAbout">
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/quick-start/">Quick Start</a></li>
+                  
+                
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/overview/">Overview</a></li>
+                  
+                
+              </ul>
             
-              <li class="nav-item"><a class="nav-link pl-0" href="/images-home/">Images</a></li>
+              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvertImages" role="button" aria-expanded="true" aria-controls="collapseConvertImages">Images</a></p>
+              <ul class="navbar-nav nav flex-column collapse" id="collapseConvertImages">
+                
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/add-an-image/">Add an image in Word</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/images-with-captions-etc/">Images with captions, sources, or other extra content</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/upload-a-cover/">Upload a cover file</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/include-full-page-images/">Include full-page images in the PDF</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/grayscale-images/">Grayscale images in the PDF</a></li>
+                  
+                
+              </ul>
             
-              <li class="nav-item"><a class="nav-link pl-0" href="/add-an-image/">Add an image</a></li>
+              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvertManuscriptsandBookText" role="button" aria-expanded="true" aria-controls="collapseConvertManuscriptsandBookText">Manuscripts and Book Text</a></p>
+              <ul class="navbar-nav nav flex-column collapse" id="collapseConvertManuscriptsandBookText">
+                
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/upload-a-manuscript/">Upload a Manuscript</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/semantic-tagging/">Semantic Tagging</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/paragraphs-wrappers-and-sections/">Paragraphs, Wrappers, and Sections</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/fine-tune-styles/">Fine-tune Word Styles</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/add-a-wrapper/">Add a Wrapper</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/add-a-section/">Add a Section</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/autogen-a-toc/">Automatically Generate a Table of Contents</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/setup-a-toc/">Set up a Table of Contents Manually</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/include-custom-content/">Include content only in the PDF or EPUB</a></li>
+                  
+                
+              </ul>
             
-              <li class="nav-item"><a class="nav-link pl-0" href="/images-with-captions-etc/">Images with captions, sources, or other extra content</a></li>
+              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvertDesign" role="button" aria-expanded="true" aria-controls="collapseConvertDesign">Design</a></p>
+              <ul class="navbar-nav nav flex-column collapse" id="collapseConvertDesign">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/adjust-trim-and-margins/">Adjust PDF trim size and margins</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/add-printer-marks/">Add printer marks</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/view-baseline-grid/">View baseline grid</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/custom-design/">Add special layout instructions</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/custom-paragraph-design/">Customize the design of specific paragraphs, wrappers, or sections</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/global-paragraph-design/">Customize the design of an entire group of paragraphs, wrappers, or sections</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/convert-template-designer/">Create a custom design template</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/custom-design-templates/">Upload a custom design template</a></li>
+                  
+                
+              </ul>
             
-              <li class="nav-item"><a class="nav-link pl-0" href="/upload-a-cover/">Upload a cover file</a></li>
+              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvertPaging" role="button" aria-expanded="true" aria-controls="collapseConvertPaging">Paging</a></p>
+              <ul class="navbar-nav nav flex-column collapse" id="collapseConvertPaging">
+                
+                  
+                
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/adjust-line-breaks/">Adjust letter spacing (PDF-only)</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/force-line-break/">Force a line break (PDF-only)</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/force-page-break/">Force a page break (PDF-only)</a></li>
+                  
+                
+              </ul>
             
-              <li class="nav-item"><a class="nav-link pl-0" href="/include-full-page-images/">Include full-page images in the PDF</a></li>
+              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvertWorkingwithCode" role="button" aria-expanded="true" aria-controls="collapseConvertWorkingwithCode">Working with Code</a></p>
+              <ul class="navbar-nav nav flex-column collapse" id="collapseConvertWorkingwithCode">
+                
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/custom-attributes/">Add custom HTML attributes</a></li>
+                  
+                
+              </ul>
             
-              <li class="nav-item"><a class="nav-link pl-0" href="/grayscale-images/">Grayscale images in the PDF</a></li>
+              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvertValidationandPreflight" role="button" aria-expanded="true" aria-controls="collapseConvertValidationandPreflight">Validation and Preflight</a></p>
+              <ul class="navbar-nav nav flex-column collapse" id="collapseConvertValidationandPreflight">
+                
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/pdf-preflight/">PDF preflight and prepress</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/epub-validation/">EPUB Validation</a></li>
+                  
+                
+              </ul>
             
-          </ul>
-        
-
-          <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseManuscriptsandBookText" role="button" aria-expanded="true" aria-controls="collapseManuscriptsandBookText">Manuscripts and Book Text</a></p>
-          
-          <ul class="navbar-nav nav flex-column collapse" id="collapseManuscriptsandBookText">
+              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvertAppendix" role="button" aria-expanded="true" aria-controls="collapseConvertAppendix">Appendix</a></p>
+              <ul class="navbar-nav nav flex-column collapse" id="collapseConvertAppendix">
+                
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/custom-style-library/">Custom Code Library</a></li>
+                  
+                
+                  
+                    <li class="nav-item"><a class="nav-link pl-0" href="/list-of-word-styles/">List of Hederis Word Styles</a></li>
+                  
+                
+              </ul>
             
-              <li class="nav-item"><a class="nav-link pl-0" href="/manuscripts-home/">Manuscripts and Book Text</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/upload-a-manuscript/">Upload a Manuscript</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/semantic-tagging/">Semantic Tagging</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/paragraphs-wrappers-and-sections/">Paragraphs, Wrappers, and Sections</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/fine-tune-styles/">Fine-tune Word Styles</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/add-a-wrapper/">Add a Wrapper</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/add-a-section/">Add a Section</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/autogen-a-toc/">Automatically Generate a Table of Contents</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/setup-a-toc/">Set up a Table of Contents Manually</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/include-custom-content/">Include content only in the PDF or EPUB</a></li>
-            
-          </ul>
-        
-
-          <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseDesign" role="button" aria-expanded="true" aria-controls="collapseDesign">Design</a></p>
-          
-          <ul class="navbar-nav nav flex-column collapse" id="collapseDesign">
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/design-home/">Design</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/adjust-trim-and-margins/">Adjust PDF trim size and margins</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/add-printer-marks/">Add printer marks</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/view-baseline-grid/">View baseline grid</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/custom-design/">Add special layout instructions</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/custom-paragraph-design/">Customize the design of specific paragraphs, wrappers, or sections</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/global-paragraph-design/">Customize the design of an entire group of paragraphs, wrappers, or sections</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/custom-design-templates/">Upload a custom design template</a></li>
-            
-          </ul>
-        
-
-          <p><a class="btn btn-primary" data-toggle="collapse" href="#collapsePaging" role="button" aria-expanded="true" aria-controls="collapsePaging">Paging</a></p>
-          
-          <ul class="navbar-nav nav flex-column collapse" id="collapsePaging">
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/paging-home/">Paging</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/adjust-line-breaks/">Adjust letter spacing (PDF-only)</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/force-line-break/">Force a line break (PDF-only)</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/force-page-break/">Force a page break (PDF-only)</a></li>
-            
-          </ul>
-        
-
-          <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseWorkingwithCode" role="button" aria-expanded="true" aria-controls="collapseWorkingwithCode">Working with Code</a></p>
-          
-          <ul class="navbar-nav nav flex-column collapse" id="collapseWorkingwithCode">
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/code-home/">Working with Code</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/custom-attributes/">Add custom HTML attributes</a></li>
-            
-          </ul>
-        
-
-          <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseValidationandPreflight" role="button" aria-expanded="true" aria-controls="collapseValidationandPreflight">Validation and Preflight</a></p>
-          
-          <ul class="navbar-nav nav flex-column collapse" id="collapseValidationandPreflight">
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/validation-home/">Validation and Preflight</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/pdf-preflight/">PDF preflight and prepress</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/epub-validation/">EPUB Validation</a></li>
-            
-          </ul>
-        
-
-          <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseAppendix" role="button" aria-expanded="true" aria-controls="collapseAppendix">Appendix</a></p>
-          
-          <ul class="navbar-nav nav flex-column collapse" id="collapseAppendix">
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/appendix-home/">Appendix</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/custom-style-library/">Custom Code Library</a></li>
-            
-              <li class="nav-item"><a class="nav-link pl-0" href="/list-of-word-styles/">List of Hederis Word Styles</a></li>
-            
-          </ul>
-        
+          </div>
 <!--           <ul class="navbar-nav nav flex-column">
+            
+              <li class="nav-item">
+                <a class="nav-link pl-0" href="/quick-start/">Quick Start</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link pl-0" href="/guided-demo/">Guided Demo</a>
+              </li>
             
               <li class="nav-item">
                 <a class="nav-link pl-0" href="/overview/">Overview</a>
@@ -178,7 +469,7 @@
               </li>
             
               <li class="nav-item">
-                <a class="nav-link pl-0" href="/add-an-image/">Add an image</a>
+                <a class="nav-link pl-0" href="/add-an-image/">Add an image in Word</a>
               </li>
             
               <li class="nav-item">
@@ -242,6 +533,34 @@
               </li>
             
               <li class="nav-item">
+                <a class="nav-link pl-0" href="/typeset-view-toolbar/">The top-right toolbar: Single View, Guides, Grid, and Run Layout</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link pl-0" href="/typeset-left-sidebar/">The left sidebar: Design tools</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link pl-0" href="/typeset-general-design/">General Page Design</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link pl-0" href="/typeset-text-design/">Sections & Text</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link pl-0" href="/typeset-sect-design/">Designing SECT elements (sections)</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link pl-0" href="/typeset-box-design/">Designing BOX elements (wrappers)</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link pl-0" href="/typeset-para-design/">Designing text paragraphs</a>
+              </li>
+            
+              <li class="nav-item">
                 <a class="nav-link pl-0" href="/adjust-trim-and-margins/">Adjust PDF trim size and margins</a>
               </li>
             
@@ -266,11 +585,19 @@
               </li>
             
               <li class="nav-item">
+                <a class="nav-link pl-0" href="/convert-template-designer/">Create a custom design template</a>
+              </li>
+            
+              <li class="nav-item">
                 <a class="nav-link pl-0" href="/custom-design-templates/">Upload a custom design template</a>
               </li>
             
               <li class="nav-item">
                 <a class="nav-link pl-0" href="/paging-home/">Paging</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link pl-0" href="/page-layout-menu/">Adjusting letter spacing, line breaks, and page breaks (PDF-only)</a>
               </li>
             
               <li class="nav-item">
@@ -319,39 +646,18 @@
             
           </ul> -->
         </div>
+      </div>
       </nav>
     </div>
 
     <div class="col-md-7 offset-md-1 two-col-text-block" id="main_content">
       <div class="row">
           <div class="col-md-12">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/vyuVLK4JIkg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<section data-type="chapter" class="hsecchapter" data-hederis-type="hsecchapter" id="quick-start" data-pi-attrs="id&#xA0;: quick-start" role="doc-chapter" title="Quick Start"><h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="pFbiAHL8z">Getting Started with Hederis:Convert</h1>
-    <p class="hblkp" data-hederis-type="hblkp" id="pvOsobdb3">Hederis:Convert is a professional book publishing tool for quickly creating beautiful, high-quality books. You provide a single Microsoft Word file containing your full book text along with any images that you use in the book (and a cover file if you&#8217;ve got one), and Hederis:Convert will process it automatically into a laid-out, print-ready PDF, and a fully-accessible and standards-conformant EPUB file. You&#8217;ll also get an updated Microsoft Word file and an HTML version of your book.</p>
-    <p class="hblkp" data-hederis-type="hblkp" id="pcBTKG0j6">In the navigation menu, you&#8217;ll see a list of all the topics in this documentation, which should also give you a sense of all the things you can do with Hederis:Convert.</p>
-    <p class="hblkp" data-hederis-type="hblkp" id="pMkPTDWWj"><strong>Here are some useful links to get you started:</strong></p>
-    <p class="hblkp" data-hederis-type="hblkp" id="pVG226G9d">The first thing you want to do is <a href="/upload-a-manuscript/"><span class="Hyperlink">upload a manuscript</span></a>.</p>
-    <p class="hblkp" data-hederis-type="hblkp" id="pt9lXaThS"><strong>After you&#8217;ve uploaded a manuscript for the first time:</strong></p>
-    <p class="hblkp" data-hederis-type="hblkp" id="pEDDP2i78"><a href="/paragraphs-wrappers-and-sections/"><span class="Hyperlink">Make sure you understand the difference between paragraphs, wrappers, and sections</span>
-      </a></p>
-    <p class="hblkp" data-hederis-type="hblkp" id="ppPfYyh2w"><a href="/fine-tune-styles/"><span class="Hyperlink">Adjust the Word Styles and tagging in your updated Word file</span>
-      </a></p>
-    <p class="hblkp" data-hederis-type="hblkp" id="pjdMB2uvJ"><a href="/add-an-image/"><span class="Hyperlink">Add any images that you want to use in the book</span>
-      </a></p>
-    <p class="hblkp" data-hederis-type="hblkp" id="pcyTCHCj1"><strong>You can also customize the design and make it your own:</strong></p>
-    <p class="hblkp" data-hederis-type="hblkp" id="pMJEZ69zJ"><a href="/custom-paragraph-design/"><span class="Hyperlink">Customize the design of specific paragraphs</span>
-      </a></p>
-    <p class="hblkp" data-hederis-type="hblkp" id="pY5xoDFVr"><a href="/global-paragraph-design/"><span class="Hyperlink">Customize the design of entire groups of paragraphs</span>
-      </a></p>
-    <p class="hblkp" data-hederis-type="hblkp" id="pqr2xHN30"><a href="/custom-design-templates/"><span class="Hyperlink">Create a custom design template</span>
-      </a></p>
-    <p class="hblkp" data-hederis-type="hblkp" id="p3lckXzwC"><strong>You&#8217;ll need to take a few extra steps to prepare your files</strong><strong> for </strong><strong>d</strong><strong>istribution</strong><strong>:</strong></p>
-    <p class="hblkp" data-hederis-type="hblkp" id="pb5ZauXlV"><a href="/pdf-preflight/"><span class="Hyperlink">PDF preflight</span>
-      </a></p>
-    <p class="hblkp" data-hederis-type="hblkp" id="pYXloiRii"><a href="/epub-validation/"><span class="Hyperlink">EPUB validation</span>
-      </a></p>
-    <p class="hblkp" data-hederis-type="hblkp" id="pRPrOnFLa">And finally, <a href="/overview/"><span class="Hyperlink">here&#8217;s a quick primer on how to create a publishing workflow using Hederis:Convert</span></a>, but we&#8217;re always happy to meet with your team to help put together a workflow that works for you &#8211; email us at <a href="mailto:info@hederis.com"><span class="Hyperlink">info@hederis.com</span></a>. </p>
+            <section data-type="chapter" class="hsecchapter" data-hederis-type="hsecchapter" id="quick-start" data-pi-attrs="id&#xA0;: quick-start" role="doc-chapter" title="Quick Start"><h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle">Welcome to Hederis!</h1>
+    <p class="hblkp" data-hederis-type="hblkp" id="pvOsobdb3">Both Hederis:Convert and Hederis:Typeset are book layout tools created by publishing professionals, for publishing professionals. With Hederis:Convert, you can upload a Microsoft Word file, and get laid-out print and ebook files in a matter of minutes. Hederis:Typeset has all the power of Hederis:Convert, with an added design and layout interface that allows you to create beautiful, custom book designs for every project, and adjust your page layout right in the browser.</p>
+    <p class="hblkp" data-hederis-type="hblkp" id="pcBTKG0j6">In the navigation menu, choose either the Typeset or Convert tab, and you&#8217;ll see a list of all the help topics for that app, which should also give you a sense of all the things you can do with Hederis:Convert and Hederis:Typeset. Click a topic to see all it&#8217;s sub-topics, and click it again to collapse that sub-menu.</p>
+    <p class="hblkp" data-hederis-type="hblkp" id="pMkPTDWWj">Almost all of the options you have in Convert are also supported by Typeset, but Typeset gives you full, visual design and paging tools so you can adjust your design right in the browser.</p>
+    <p class="hblkp" data-hederis-type="hblkp" id="pVG226G9d">If you can&#8217;t find the answer to your question, please feel free to email us: <a href="mailto:help@hederis.com">help@hederis.com</a>.</p>
     </section>
             <div class="PageNavigation text-center">
               
@@ -382,7 +688,7 @@
 <script>
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
-  })
+  });
 </script>
 
 </body>
