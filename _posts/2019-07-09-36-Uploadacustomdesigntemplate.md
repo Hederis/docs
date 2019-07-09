@@ -7,8 +7,8 @@ tags: [convert,typeset]
 published: true
 ---
 
-<section data-type="chapter" class="hsecchapter" data-hederis-type="hsecchapter" id="custom-design-templates" data-pi-attrs="id: custom-design-templates; data-tags: convert,typeset;" role="doc-chapter" data-tags="convert,typeset" data-author-name=" " data-book-title=" " title="Upload a custom design template"><h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="pn7l31DrN">Upload a custom design template</h1>
-    <p class="hblkp" data-hederis-type="hblkp" id="pPwZ2aX9k">To upload your own CSS design template, email us at help@hederis.com.</p>
-    <p class="hblkp" data-hederis-type="hblkp" id="p3NvMKgBn">Want us to translate an InDesign template into CSS? Email info@hederis.com to learn more about this option.</p>
+<section data-type="chapter" class="hsecchapter" data-hederis-type="hsecchapter" id="custom-design-templates" data-pi-attrs="id: custom-design-templates; data-tags: convert,typeset;" role="doc-chapter" data-tags="convert,typeset" data-author-name=" " data-book-title=" " title="Upload a custom design template"><h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="pr8Bl2nFy">Upload a custom design template</h1>
+    <p class="hblkp" data-hederis-type="hblkp" id="pMqVLx32s">To upload your own CSS design template, email us at help@hederis.com.</p>
+    <p class="hblkp" data-hederis-type="hblkp" id="pVCLwncBq">Want us to translate an InDesign template into CSS? Email info@hederis.com to learn more about this option.</p>
     </section>
     
