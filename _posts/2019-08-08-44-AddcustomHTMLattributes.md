@@ -1,0 +1,34 @@
+---
+layout: default
+title:  "Add custom HTML attributes"
+permalink:  /custom-attributes/
+categories: [Working with Code]
+tags: [convert,typeset]
+published: true
+---
+
+<section data-type="chapter" class="hsecchapter" data-hederis-type="hsecchapter" id="custom-attributes" data-pi-attrs="id: custom-attributes; data-tags: convert,typeset;" role="doc-chapter" data-tags="convert,typeset" data-author-name=" " data-book-title=" " title="Add custom HTML attributes"><h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="pNp8YBMst">Add custom HTML attributes</h1>
+    <p class="hblkp" data-hederis-type="hblkp" id="plL9n4dWa">You can add custom HTML attributes to your final HTML, if you&#8217;ll be using the HTML in your own processes later &#8211; these attributes will also be included in your EPUB file. For example, you can customize the ID for a section, or you can add special role attributes to certain paragraphs so that your EPUB conforms to your company&#8217;s internal specification.</p>
+    <p class="hblkp" data-hederis-type="hblkp" id="p6hJJ2Uzb">To add a custom attribute, use a <a href="{% post_url 2019-08-08-33-Addspeciallayoutinstructions %}"><span class="Hyperlink">processing instruction</span></a>, like this:</p>
+    <ol class="hwprnumlist" data-hederis-type="hwprnumlist" id="p3PlPwfAI"><li class="hblkoli" data-hederis-type="hblkoli" id="lirBkkpMP8"><p class="hblkoli" data-hederis-type="hblklip" id="pdXnOV3nW">Find the paragraph that you want to add custom attributes to, and insert a new &#8220;HED Processing instruction&#8221; paragraph below it (for more details on how to do this, see &#8220;<a href="{% post_url 2019-08-08-33-Addspeciallayoutinstructions %}"><span class="Hyperlink">Add special layout instructions</span></a>&#8221;).</p></li>
+    <li class="hblkoli" data-hederis-type="hblkoli" id="liIr4V4bcJ"><p class="hblkoli" data-hederis-type="hblklip" id="pTpkYC0Yq">In your processing instruction paragraph, type the text ATTRS=.</p></li>
+    <li class="hblkoli" data-hederis-type="hblkoli" id="lig3PHaeUP"><p class="hblkoli" data-hederis-type="hblklip" id="pW98BkOmg">Next, type the attribute name, followed by a colon, and then the attribute value.</p></li>
+    <li class="hblkoli" data-hederis-type="hblkoli" id="liuyqc0rwb"><p class="hblkoli" data-hederis-type="hblklip" id="pHRv4DuCN">To add more custom attributes, type a semi-colon, and then type the next attribute name, followed by a colon, and then the attribute value, and so on.</p></li>
+    </ol>
+    <img data-hederis-type="hblkimg" class="hblkimg" id="p5NVsNnBP" src="/images/customattrs.png"/>
+    <p class="hblkp" data-hederis-type="hblkp" id="p7bJcvqUT">To add a custom attribute to a wrapper, insert the processing instruction paragraph after <strong data-hederis-type="hspanstrong">either</strong> the wrapper &#8220;start&#8221; or &#8220;end&#8221; paragraphs. (See &#8220;Customize the design of specific paragraphs, wrappers, or sections&#8221; for an example of what this looks like.)</p>
+    <p class="hblkp" data-hederis-type="hblkp" id="pwYgCQmGR">To add a custom attribute to an entire section, insert the processing instruction paragraph after the section start paragraph. (See &#8220;Customize the design of specific paragraphs, wrappers, or sections&#8221; for an example of what this looks like.)</p>
+    <section class="hwprsubsection" data-hederis-type="hwprsubsection" id="pcEME5d4j" data-type="subsection" title="Using the SCOPE-BODY Option"><h1 data-hederis-type="hblktitle" class="hblktitle" id="pqscQ9iuQ">Using the SCOPE-BODY Option</h1>
+    <p class="hblkp" data-hederis-type="hblkp" id="ps4ozsLvl">You can also apply attributes to your entire document, by using the SCOPE-BODY option in your ATTRS processing instruction. This will apply the selected attribute to the main container element of your manuscript, rather than being applied to the immediately preceding element. To do this:</p>
+    <ol class="hwprnumlist" data-hederis-type="hwprnumlist" id="p5cd8nRUe"><li class="hblkoli" data-hederis-type="hblkoli" id="lif3iJ2vbq"><p class="hblkoli" data-hederis-type="hblklip" id="pEU2RRoyU">Type your ATTRS processing instruction, as described above.</p></li>
+    <li class="hblkoli" data-hederis-type="hblkoli" id="li8Ja1F1Yu"><p class="hblkoli" data-hederis-type="hblklip" id="p4c0qZ57b">After the custom attribute value, but before the closing semi-colon, type: SCOPE-BODY.</p></li>
+    </ol>
+    <p class="hblkp" data-hederis-type="hblkp" id="pqYam1Sha">Your attribute will now be applied to the body element. </p>
+    <figure class="hwprfig" data-hederis-type="hwprfig" id="pJc9Ug6b3"><img data-hederis-type="hblkimg" class="hblkimg" id="p53rEGgII" src="/images/globalscopebody.png"/>
+    <p class="hblkcaption" data-hederis-type="hblkcaption" id="pYtBJMrqJ">In this processing instruction, we&#8217;re overriding the running header text with our own custom text. You can read more about this code snippet in &#8220;<a href="{% post_url 2019-08-08-49-CustomCodeLibrary %}"><span class="Hyperlink">Custom Styles Library</span></a>&#8221;.</p>
+    </figure>
+    <p class="hblkp" data-hederis-type="hblkp" id="p7oCWIXfR">Note that the SCOPE-BODY option must be invoked for each attribute that you want to apply to the body. For example, in the image below, because only the &#8220;data-author-name&#8221; attribute invokes the SCOPE-BODY option, only that attribute will be applied to the entire body, and the &#8220;id&#8221; attribute will be applied to the immediately preceding element (in this case, the chapter title) as usual.</p>
+    <img data-hederis-type="hblkimg" class="hblkimg" id="pgLFANB4S" src="/images/attrscopebody.png"/>
+    </section>
+    </section>
+    
