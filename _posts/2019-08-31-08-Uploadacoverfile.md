@@ -7,8 +7,8 @@ tags: [convert,typeset]
 published: true
 ---
 
-<section data-type="chapter" class="hsecchapter" data-hederis-type="hsecchapter" id="upload-a-cover" data-pi-attrs="id: upload-a-cover; data-tags: convert,typeset;" role="doc-chapter" data-tags="convert,typeset" data-author-name=" " data-book-title=" " title="Upload a cover file"><h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="pJC9ZCfDu">Upload a cover file</h1>
-    <p class="hblkp" data-hederis-type="hblkp" id="pOfljkL71">Hederis will automatically include your book cover in the generated EPUB file, and will include any image files that are in your book text. To include cover and images files, upload them <em data-hederis-type="hspanem">before </em>you upload your Word manuscript, as indicated on the Hederis user interface.</p>
-    <p class="hblkp" data-hederis-type="hblkp" id="pf8dyD9iX">To designate an image as the cover image, simply click on it to select it.</p>
+<section data-type="chapter" class="hsecchapter" data-hederis-type="hsecchapter" id="upload-a-cover" data-pi-attrs="id: upload-a-cover; data-tags: convert,typeset;" role="doc-chapter" data-tags="convert,typeset" data-author-name=" " data-book-title=" " title="Upload a cover file"><h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="pOvYdw8ai">Upload a cover file</h1>
+    <p class="hblkp" data-hederis-type="hblkp" id="pwtXYKeLv">Hederis will automatically include your book cover in the generated EPUB file, and will include any image files that are in your book text. To include cover and images files, upload them <em data-hederis-type="hspanem">before </em>you upload your Word manuscript, as indicated on the Hederis user interface.</p>
+    <p class="hblkp" data-hederis-type="hblkp" id="pzRCU3SsG">To designate an image as the cover image, simply click on it to select it.</p>
     </section>
     
