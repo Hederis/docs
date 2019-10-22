@@ -1,0 +1,31 @@
+---
+layout: default
+title:  "Automatically Generate a Table of Contents"
+permalink:  /autogen-a-toc/
+categories: [Manuscripts and Book Text]
+tags: [convert,typeset]
+published: true
+---
+
+<section data-type="chapter" class="hsecchapter" data-hederis-type="hsecchapter" id="autogen-a-toc" data-pi-attrs="id: autogen-a-toc; data-tags: convert,typeset;" role="doc-chapter" data-tags="convert,typeset" data-author-name=" " data-book-title=" " title="Automatically Generate a Table of Contents"><h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="pN0zYss68">Automatically Generate a Table of Contents</h1>
+    <p class="hblkp" data-hederis-type="hblkp" id="pENk0kQEV">Hederis can automatically generate a Table of Contents for you, and insert it into your print file in any location you choose. Additionally, you can specify not to include certain chapters or sections in your generated Table of Contents, and specify how many levels deep you want the Table of Contents to go (for example, you can include only chapter-level headings, or include nested subsections to any level). Here&#8217;s how:</p>
+    <aside class="hwprbox box" data-hederis-type="hwprbox" id="pOyeSURBg" data-type="sidebar"><p class="hblktype" data-hederis-type="hblktype" id="py2lD2oBF">Note</p>
+    <p class="hblkp" data-hederis-type="hblkp" id="pVEs9FdAQ">EPUB files will always include an auto-generated Table of Contents. You can use the same processing instruction option (see step 5 below) to exclude a section from the EPUB Table of Contents.</p>
+    </aside>
+    <ol class="hwprnumlist" data-hederis-type="hwprnumlist" id="p8PA9Xrmv"><li class="hblkoli" data-hederis-type="hblkoli" id="liL8ZM954i"><p class="hblkoli" data-hederis-type="hblklip" id="ptUcj2dP6">In your Word manuscript, insert a paragraph in the exact location that you&#8217;d like your Table of Contents to appear. This paragraph can use any style, and contain any text, which will be deleted when your generated Table of Contents is inserted.</p></li>
+    <li class="hblkoli" data-hederis-type="hblkoli" id="li0C0WLaLd"><p class="hblkoli" data-hederis-type="hblklip" id="pYo8ikqOJ">Insert another paragraph below this placeholder paragraph, and style it with the <span class="Emphasis" id="pCt06Sn4F"><em class="hspanem" data-hederis-type="hspanem" id="pLHoqduxK">HED Processing instruction</em></span> style.</p></li>
+    <li class="hblkoli" data-hederis-type="hblkoli" id="lidsXpRDAu"><p class="hblkoli" data-hederis-type="hblklip" id="pbyGi0jeN">Inside this processing instruction paragraph, type the following text: <strong class="hspanstrong" data-hederis-type="hspanstrong" id="pm3Mc7qxY">ATTRS=data-auto-toc: true; data-toc-level: 2</strong>. </p><img data-hederis-type="hblkimg" class="hblkimg" id="p02VZW2Tt" src="/images/tocplaceholder.png" data-img-src="tocplaceholder.png"/>
+    </li>
+    <li class="hblkoli" data-hederis-type="hblkoli" id="li1WmP9pkC"><p class="hblkoli" data-hederis-type="hblklip" id="pQyZ9hahI">Set the level number to the depth of subsections that you&#8217;d like to include. For example, data-toc-level: 1 would only include chapter-level headings; data-toc-level:2 would also include the first level of subsections within any chapters; data-toc-level: 3 would include a further level of nested subsections within the first level of subsections; and so on.</p></li>
+    <li class="hblkoli" data-hederis-type="hblkoli" id="lidtiOq5WD"><p class="hblkoli" data-hederis-type="hblklip" id="pVVYYEyAz">To exclude a chapter or section from being listed in your Table of Contents, go to the section divider paragraph for the section that you want to exclude and insert a <span class="Emphasis" id="prHltgzAk"><em class="hspanem" data-hederis-type="hspanem" id="pXAWvvH0m">HED Processing instruction</em></span> paragraph below the section divider paragraph. </p><p class="hblklicont" data-hederis-type="hblklicont" id="pCh934RcN">If you already have a <span class="Emphasis" id="pVQEyL8t5"><em class="hspanem" data-hederis-type="hspanem" id="p0ChDEEod">HED Processing instruction</em></span> paragraph in that location, then there&#8217;s no need to insert another one&#8212;simply type a <strong class="hspanstrong" data-hederis-type="hspanstrong" id="p14PheDL0">+</strong> after your existing processing instruction text, and then proceed to the next step.</p>
+    </li>
+    <li class="hblkoli" data-hederis-type="hblkoli" id="lijh8IXu7v"><p class="hblkoli" data-hederis-type="hblklip" id="pcZljENrO">Type the following text in your processing instruction paragraph: <strong class="hspanstrong" data-hederis-type="hspanstrong" id="p1MprTbix">ATTRS=data-toc-display: none</strong>.</p><figure class="hwprfig" data-hederis-type="hwprfig" id="pM3H4QcuQ"><img data-hederis-type="hblkimg" class="hblkimg" id="pQNH9L7R3" src="/images/tocexclude.png" data-img-src="tocexclude.png"/>
+    <p class="hblkcaption" data-hederis-type="hblkcaption" id="pnDz2CXbf">Here we have two examples of sections to be excluded from a Table of Contents. The first section also uses a processing instruction to suppress it from the print version of the book.</p>
+    </figure>
+    </li>
+    </ol>
+    <p class="hblkp" data-hederis-type="hblkp" id="piwrqmUpw">The next time you upload and build your PDF, a Table of Contents will automatically be created and inserted in the text. If you&#8217;d like your Table of Contents to appear in its own section, precede it with a <span class="Emphasis" id="pQXcLYsLJ"><em class="hspanem" data-hederis-type="hspanem" id="pZW7NJaGy">HED SECT TOC</em></span> paragraph, like this:</p>
+    <img data-hederis-type="hblkimg" class="hblkimg" id="pRnftHIPb" src="/images/tocsection.png" data-img-src="tocsection.png"/>
+    <p class="hblkp" data-hederis-type="hblkp" id="pFIbDRXr8">For even finer control over your Table of Contents (e.g., to customize all the text that appears in each Table of Contents item), you can insert a Table of Contents manually. See &#8220;<a href="{% post_url 2019-10-22-20-SetupaTableofContentsManually %}" id="p4pn9iqx6"><span class="Hyperlink" id="p6xKBvuWB">Set up a Table of Contents Manually</span></a>&#8221; for instructions.</p>
+    </section>
+    
