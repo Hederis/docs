@@ -121,6 +121,10 @@ h3 {
   margin-bottom: 1em;
 }
 
+p[data-embedded-html="true"], #pricing p[data-embedded-html="true"] {
+  display: none;
+}
+
 .half-height {
   margin-top: 40vh;
 }
