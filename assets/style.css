@@ -25,6 +25,10 @@ h3 {
   margin-bottom: 1em;
 }
 
+p[data-embedded-html="true"] {
+  display: none;
+}
+
 #home_content {
   position: absolute;
   overflow-y: scroll;
@@ -363,10 +367,6 @@ div.two-col-text-block div.col-md-6 {
   font-family: "Robinson Web";
   font-weight: 300;
   margin-bottom: 0.75em;
-}
-
-p[data-embedded-html="true"] {
-  display: none;
 }
 
 @media all and (max-width: 767px) {
