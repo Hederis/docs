@@ -164,6 +164,8 @@ for inputfile in allfiles:
         filetitle = re.sub("[^a-zA-Z0-9-_]","",mytitle)
         filename = outputpath + str(d.year) + "-" + "{0:0=2d}".format(d.month) + "-" + "{0:0=2d}".format(d.day) + "-" + "{0:0=2d}".format(counter) + "-" + filetitle + ".md"
 
+        # fix self-closing iframes
+        htmlstr = re.sub(rb'(<iframe[^>]*?)(\/>)', rb'\1></iframe>',htmlstr)
         f = open(filename, 'wb')
         f.write(header)
         f.write(htmlstr)

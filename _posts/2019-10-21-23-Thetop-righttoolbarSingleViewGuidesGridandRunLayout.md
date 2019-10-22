@@ -8,7 +8,7 @@ published: true
 ---
 
 <section data-type="chapter" class="hsecchapter" data-hederis-type="hsecchapter" id="typeset-view-toolbar" data-pi-attrs="id: typeset-view-toolbar; data-tags: typeset;" role="doc-chapter" data-tags="typeset" data-author-name=" " data-book-title=" " title="The top-right toolbar: Single View, Guides, Grid, and Run Layout"><h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="pbPya64lo">The top-right toolbar: Single View, Guides, Grid, and Run Layout</h1>
-    <iframe width="800" height="450" src="https://www.youtube.com/embed/uJFdCjW8Rl8" frameborder="0" allow="accelerometer;" encrypted-media="" gyroscope="" picture-in-picture="" allowfullscreen="" id="puBo7zYs1"/>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/uJFdCjW8Rl8" frameborder="0" allow="accelerometer;" encrypted-media="" gyroscope="" picture-in-picture="" allowfullscreen="" id="puBo7zYs1"></iframe>
     <p data-embedded-html="true" id="pFA42w6kX">INTENTIONALLY BLANK</p>
     <p class="hblkp" data-hederis-type="hblkp" id="pgPmTJyRV">At the top right of the previewer, you should see three rows of buttons. At the top are your standard page navigation buttons, to take you back to the Dashboard, to your Settings options, and the book info editor.</p>
     <img data-hederis-type="hblkimg" class="hblkimg" id="pS2NVO15m" src="/images/righttoolbar.png" data-img-src="righttoolbar.png"/>

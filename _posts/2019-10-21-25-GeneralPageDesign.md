@@ -8,11 +8,11 @@ published: true
 ---
 
 <section data-type="chapter" class="hsecchapter" data-hederis-type="hsecchapter" id="typeset-general-design" data-pi-attrs="id: typeset-general-design; data-tags: typeset;" role="doc-chapter" data-tags="typeset" data-author-name=" " data-book-title=" " title="General Page Design"><h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="pfm13firM">General Page Design</h1>
-    <iframe width="800" height="450" src="https://www.youtube.com/embed/uJFdCjW8Rl8" frameborder="0" allow="accelerometer;" encrypted-media="" gyroscope="" picture-in-picture="" allowfullscreen="" id="p83zk7TBZ"/>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/uJFdCjW8Rl8" frameborder="0" allow="accelerometer;" encrypted-media="" gyroscope="" picture-in-picture="" allowfullscreen="" id="p83zk7TBZ"></iframe>
     <p data-embedded-html="true" id="py1mmkqT2">INTENTIONALLY BLANK</p>
     <p class="hblkp" data-hederis-type="hblkp" id="typeset-master-pages" data-pi-attrs="id: typeset-master-pages; data-tags: typeset;" data-tags="typeset">In this toolset, you can configure your trim size, as well as type settings that will cascade down to all the elements in your book (but you can customize each element, as described in Sections &amp; Text).</p>
     <h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="pWcDHzLNm">Master Pages</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/OVFvTesq8-E" frameborder="0" allow="accelerometer;" autoplay="" encrypted-media="" gyroscope="" picture-in-picture="" allowfullscreen="" id="pYBtJyiLu"/>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OVFvTesq8-E" frameborder="0" allow="accelerometer;" autoplay="" encrypted-media="" gyroscope="" picture-in-picture="" allowfullscreen="" id="pYBtJyiLu"></iframe>
     <p data-embedded-html="true" id="pQ6TMFoWQ">INTENTIONALLY BLANK</p>
     <p class="hblkp" data-hederis-type="hblkp" id="proLFuMw6">Master pages control the general layout of all the different sections in your book. The master page determines the page margins, where the running headers and footers go and what kind of content should appear in them, and how to format that text.</p>
     <p class="hblkp" data-hederis-type="hblkp" id="pbGwvDzzA">You can configure 5 different master pages: chapters, 2 types of frontmatter, backmatter, and parts. While these master pages are applied to certain types of sections by default, you can change the master page that is used in any section, in the Sections &amp; Text toolset.</p>
