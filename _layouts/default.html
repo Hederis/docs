@@ -38,14 +38,14 @@
           <h2>Help Topics</h2>
           <p>Click a topic to see all related articles</p>
 
-          <ul class="nav nav-tabs mb-3">
+<!--           <ul class="nav nav-tabs mb-3">
             <li class="nav-item bsauto">
               <a class="nav-link bsauto active" id="typeset-tab" data-toggle="tab" href="#typesettab" role="tab" aria-controls="typesettab" aria-selected="true">Typeset</a>
             </li>
             <li class="nav-item bsauto">
               <a class="nav-link bsauto" id="convert-tab" data-toggle="tab" href="#converttab" role="tab" aria-controls="converttab" aria-selected="false">Convert</a>
             </li>
-          </ul>
+          </ul> -->
 
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="typesettab" role="tabpanel" aria-labelledby="typeset-tab">
@@ -60,7 +60,7 @@
                 </ul>
               {% endfor %}
             </div>
-            <div class="tab-pane fade" id="converttab" role="tabpanel" aria-labelledby="convert-tab">
+<!--             <div class="tab-pane fade" id="converttab" role="tabpanel" aria-labelledby="convert-tab">
               {% for category in site.categories %}
               <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvert{{ category[0] | strip_html | remove:' ' }}" role="button" aria-expanded="true" aria-controls="collapseConvert{{ category[0] | strip_html | remove:' ' }}">{{ category[0] }}</a></p>
               <ul class="navbar-nav nav flex-column collapse" id="collapseConvert{{ category[0] | strip_html | remove:' ' }}">
@@ -71,7 +71,7 @@
                 {% endfor %}
               </ul>
             {% endfor %}
-          </div>
+          </div> -->
 <!--           <ul class="navbar-nav nav flex-column">
             {% for post in site.posts reversed %}
               <li class="nav-item">
