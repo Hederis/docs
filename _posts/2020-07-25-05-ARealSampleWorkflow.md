@@ -3,7 +3,7 @@ layout: default
 title:  "A Real Sample Workflow"
 permalink:  /sample-workflow/
 categories: [About]
-tags: []
+tags: [typeset]
 published: true
 ---
 
