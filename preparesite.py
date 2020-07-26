@@ -102,7 +102,7 @@ names = makeLinkDests(fullroot, elarr)
 allfiles = [f for f in listdir(inputpath) if isfile(join(inputpath, f))]
 
 allfiles.sort()
-allfiles.remove(".DS_Store")
+# allfiles.remove(".DS_Store")
 
 counter = 1
 
