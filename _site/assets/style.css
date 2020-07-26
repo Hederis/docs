@@ -369,10 +369,6 @@ div.two-col-text-block div.col-md-6 {
   margin-bottom: 0.75em;
 }
 
-p[data-embedded-html="true"] {
-  display: none;
-}
-
 @media all and (max-width: 767px) {
 
 
