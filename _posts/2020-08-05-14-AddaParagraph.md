@@ -1,0 +1,10 @@
+---
+layout: default
+title:  "Add a Paragraph"
+permalink:  /add-a-paragraph/
+categories: [Manuscripts and Book Text]
+tags: [typeset]
+published: true
+---
+
+<section data-type="chapter" class="hsecchapter" data-hederis-type="hsecchapter" id="add-a-paragraph" data-pi-attrs="id: add-a-paragraph; data-tags: typeset;" role="doc-chapter" data-tags="typeset" data-author-name=" " data-book-title=" " title="Add a Paragraph"><h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="pHDsvNsFM">Add a Paragraph</h1><p class="hblkp" data-hederis-type="hblkp" id="p1FHR1IP2">Adding paragraphs is what Microsoft Word was made to do, and it&#8217;s as easy as you expect it to be. Just click your cursor into the Word file, and press enter: voila, you&#8217;ve got a new paragraph! If you&#8217;re working with the Hederis Word file, then all of the Hederis styles will already be available to you in the Styles Pane (see the previous section, &#8220;<a href="{% post_url 2020-08-05-13-WorkingwithMicrosoftWord %}" data-hederis-type="hspana" id="pHL3JOz3m"><span class="Hyperlink" data-hederis-type="hspnspan" id="plLbpvSMm">Working With Microsoft Word</span></a>&#8221;).</p><p class="hblkp" data-hederis-type="hblkp" id="powTP1OvA">To add a paragraph in the Hederis Edit Text pane:</p><ol class="hwprnumlist" data-hederis-type="hwprnumlist" id="pHXqA6VTu"><li class="hblkoli" data-hederis-type="hblkoli" id="licSQq0YNn"><p class="hblkoli" data-hederis-type="hblklip" id="pAjhlZfav">Find the paragraph above which you want to insert your new paragraph, and click to select it.</p></li><li class="hblkoli" data-hederis-type="hblkoli" id="li1gQ3sX3v"><p class="hblkoli" data-hederis-type="hblklip" id="pUASxvENX">In the top menu, click &#8220;Insert Paragraph.&#8221; Your new paragraph will be inserted, and you can adjust the style as needed (see &#8220;<a href="{% post_url 2020-08-05-12-StylesandtheEditTextPane %}" data-hederis-type="hspana" id="pIgjvAlao"><span class="Hyperlink" data-hederis-type="hspnspan" id="pkWwWbyPj">Styles and the Edit Text Pane</span></a>&#8221;).</p></li></ol></section>
