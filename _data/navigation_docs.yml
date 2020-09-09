@@ -1,0 +1,81 @@
+- title: Getting Started
+  docs:
+  - quick-start
+  - guided-demo
+  - sample-workflow
+
+- title: "File Management, Uploads, and Downloads"
+  docs:
+  - upload-a-manuscript
+  - snapshots
+
+- title: Working with Book Text
+  docs:
+  - semantic-tagging
+  - paragraphs-wrappers-and-sections
+  - edit-text-mode
+  - fine-tune-styles
+  - add-a-paragraph
+  - add-a-wrapper
+  - add-a-section
+  - add-an-inline
+  - autogen-a-toc
+  - setup-a-toc
+  - include-custom-content
+
+- title: Design
+  docs:
+  - design-templates
+  - typeset-view-toolbar
+  - baseline-grid
+  - typeset-left-sidebar
+  - typeset-general-design
+  - typeset-master-pages
+  - typeset-text-design
+  - typeset-sect-design
+  - typeset-box-design
+  - typeset-para-design
+  - custom-font
+  - selectors
+  - add-printer-marks
+  - custom-design
+  - custom-design-templates
+
+- title: Paging
+  docs:
+  - page-locking
+  - locked-changes
+  - page-layout-menu
+
+- title: Images
+  docs:
+  - add-an-image
+  - images-with-captions-etc
+  - upload-a-cover
+  - include-full-page-images
+  - resize-images
+  - grayscale-images
+
+- title: Validation and Preflight
+  docs:
+  - pdf-preflight
+  - epub-validation
+
+- title: Groups and Billing
+  docs:
+  - billing-info
+  - about-groups
+  - create-group
+  - group-billing
+
+- title: How Do I…
+  docs:
+  - hanging-indent
+  - line-space-ornament
+  - chapter-ornament-inline
+  - unitalicize-text
+
+- title: Appendix
+  docs:
+  - custom-attributes
+  - list-of-word-styles

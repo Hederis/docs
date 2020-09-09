@@ -1,936 +1,1279 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <title>Documentation - Hederis</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <head>
   <meta charset="utf-8">
-  
-  <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://www.hederis.com/apple-touch-icon-57x57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.hederis.com/apple-touch-icon-114x114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.hederis.com/apple-touch-icon-72x72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.hederis.com/apple-touch-icon-144x144.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.hederis.com/apple-touch-icon-120x120.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.hederis.com/apple-touch-icon-152x152.png" />
-  <link rel="icon" type="image/png" href="https://www.hederis.com/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="https://www.hederis.com/favicon-16x16.png" sizes="16x16" />
-  <meta name="application-name" content="Automated publishing for everyone"/>
-  <meta name="msapplication-TileColor" content="#FFFFFF" />
-  <meta name="msapplication-TileImage" content="https://www.hederis.com/mstile-144x144.png" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>User Guide | Hederis - Automated Publishing for Everyone</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="User Guide" />
+<meta name="author" content="The Hederis Team" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Hederis - Automated Publishing for Everyone" />
+<meta property="og:description" content="Hederis - Automated Publishing for Everyone" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="User Guide" />
+<script type="application/ld+json">
+{"description":"Hederis - Automated Publishing for Everyone","@type":"WebSite","headline":"User Guide","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/Hederiswordmark_purple@1x.svg"},"name":"The Hederis Team"},"url":"http://localhost:4000/","name":"User Guide","author":{"@type":"Person","name":"The Hederis Team"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-  <link rel="stylesheet" type="text/css" href="/assets/tocnav.css" />
-  <link rel="stylesheet" type="text/css" href="/assets/styles.css" />
-  <link rel="stylesheet" type="text/css" href="/assets/footer.css" />
+  <meta property="og:image" content="http://localhost:4000/uploads/Hederiswordmark_purple@1x.svg"/>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/png" href="/uploads/favicon.png" >
+  <link rel="alternate" type="application/rss+xml" title="User Guide" href="/feed.xml">
+  <script src="/assets/js/main.js"></script>
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+  
 </head>
 
-<body>
-<div class="container-fluid">
-  <div class="row" id="pricing">
+    <body>
 
-    <div class="col-md-3 nav white" id="docs_nav">
-      <h1 class=""><a href="/index.html"></a></h1>
-      <div class="mobile_nav_btn"><span id="stripe_1"></span><span id="stripe_2"></span><span id="stripe_3"></span></div>
-      <nav class="navbar">
-        <div class="mobile_nav_hider" id="navbarTogglerDemo03">
+    
+        
 
-          <h2>Help Topics</h2>
-          <p>Click a topic to see all related articles</p>
 
-<!--           <ul class="nav nav-tabs mb-3">
-            <li class="nav-item bsauto">
-              <a class="nav-link bsauto active" id="typeset-tab" data-toggle="tab" href="#typesettab" role="tab" aria-controls="typesettab" aria-selected="true">Typeset</a>
-            </li>
-            <li class="nav-item bsauto">
-              <a class="nav-link bsauto" id="convert-tab" data-toggle="tab" href="#converttab" role="tab" aria-controls="converttab" aria-selected="false">Convert</a>
-            </li>
-          </ul> -->
 
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="typesettab" role="tabpanel" aria-labelledby="typeset-tab">
-              
-                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypesetAbout" role="button" aria-expanded="true" aria-controls="collapseTypesetAbout">About</a></p>
-                <ul class="navbar-nav nav flex-column collapse" id="collapseTypesetAbout">
-                  
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/guided-demo/">Guided Demo</a></li>
-                    
-                  
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/sample-workflow/">A Real Sample Workflow</a></li>
-                    
-                  
-                </ul>
-              
-                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypesetDashboardandFiles" role="button" aria-expanded="true" aria-controls="collapseTypesetDashboardandFiles">Dashboard and Files</a></p>
-                <ul class="navbar-nav nav flex-column collapse" id="collapseTypesetDashboardandFiles">
-                  
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/snapshots/">Create a Named Backup</a></li>
-                    
-                  
-                </ul>
-              
-                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypesetManuscriptsandBookText" role="button" aria-expanded="true" aria-controls="collapseTypesetManuscriptsandBookText">Manuscripts and Book Text</a></p>
-                <ul class="navbar-nav nav flex-column collapse" id="collapseTypesetManuscriptsandBookText">
-                  
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/upload-a-manuscript/">Upload a Manuscript</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/semantic-tagging/">About Styles</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/paragraphs-wrappers-and-sections/">Paragraphs, Wrappers, Sections, and Inlines</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/edit-text-mode/">Styles and the Edit Text Pane</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/fine-tune-styles/">Working with Microsoft Word</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/add-a-paragraph/">Add a Paragraph</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/add-a-wrapper/">Add a Wrapper</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/add-a-section/">Add a Section</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/add-an-inline/">Add an Inline</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/autogen-a-toc/">Automatically Generate a Table of Contents</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/setup-a-toc/">Set up a Table of Contents Manually</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/include-custom-content/">Include content only in the PDF or EPUB</a></li>
-                    
-                  
-                </ul>
-              
-                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypesetDesign" role="button" aria-expanded="true" aria-controls="collapseTypesetDesign">Design</a></p>
-                <ul class="navbar-nav nav flex-column collapse" id="collapseTypesetDesign">
-                  
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/design-templates/">Design Templates</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/typeset-view-toolbar/">The top-right toolbar: Single View, Guides, Grid, and Run Layout</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/baseline-grid/">Working with the Baseline Grid</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/typeset-left-sidebar/">The left sidebar: Design tools</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/typeset-general-design/">General Page Design</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/typeset-master-pages/">Page Templates</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/typeset-text-design/">Sections & Text</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/typeset-sect-design/">Designing SECT elements (sections)</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/typeset-box-design/">Designing BOX elements (wrappers)</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/typeset-para-design/">Designing text paragraphs</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/custom-font/">Use a Custom Font</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/selectors/">Adjusting the design of only certain paragraphs</a></li>
-                    
-                  
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/add-printer-marks/">Add printer marks</a></li>
-                    
-                  
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/custom-design/">Add special layout instructions</a></li>
-                    
-                  
-                    
-                  
-                    
-                  
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/custom-design-templates/">Upload a custom design template</a></li>
-                    
-                  
-                </ul>
-              
-                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypesetPaging" role="button" aria-expanded="true" aria-controls="collapseTypesetPaging">Paging</a></p>
-                <ul class="navbar-nav nav flex-column collapse" id="collapseTypesetPaging">
-                  
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/page-locking/">Lock chapters to prevent reflow</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/locked-changes/">Make Changes to a Locked Chapter</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/page-layout-menu/">Adjusting letter spacing, line breaks, and page breaks (PDF-only)</a></li>
-                    
-                  
-                    
-                  
-                    
-                  
-                    
-                  
-                </ul>
-              
-                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypesetImages" role="button" aria-expanded="true" aria-controls="collapseTypesetImages">Images</a></p>
-                <ul class="navbar-nav nav flex-column collapse" id="collapseTypesetImages">
-                  
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/add-an-image/">Add an image in Word</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/images-with-captions-etc/">Images with captions, sources, or other extra content</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/upload-a-cover/">Upload a cover file</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/include-full-page-images/">Include full-page images in the PDF</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/resize-images/">Resize an image in the design preview</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/grayscale-images/">Grayscale images in the PDF</a></li>
-                    
-                  
-                </ul>
-              
-                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypesetValidationandPreflight" role="button" aria-expanded="true" aria-controls="collapseTypesetValidationandPreflight">Validation and Preflight</a></p>
-                <ul class="navbar-nav nav flex-column collapse" id="collapseTypesetValidationandPreflight">
-                  
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/pdf-preflight/">PDF preflight and prepress</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/epub-validation/">EPUB Validation</a></li>
-                    
-                  
-                </ul>
-              
-                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypesetGroupsandBilling" role="button" aria-expanded="true" aria-controls="collapseTypesetGroupsandBilling">Groups and Billing</a></p>
-                <ul class="navbar-nav nav flex-column collapse" id="collapseTypesetGroupsandBilling">
-                  
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/billing-info/">Add Your Billing Information</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/about-groups/">About Groups</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/create-group/">Create a Group</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/group-billing/">Set Up Billing for Your Group</a></li>
-                    
-                  
-                </ul>
-              
-                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypesetHowDoI…" role="button" aria-expanded="true" aria-controls="collapseTypesetHowDoI…">How Do I…</a></p>
-                <ul class="navbar-nav nav flex-column collapse" id="collapseTypesetHowDoI…">
-                  
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/hanging-indent/">Create a Hanging Indent</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/line-space-ornament/">Add an Ornamental Image to a Line Space Paragraph</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/chapter-ornament-inline/">Add an Ornamental Image on the Same Line as a Chapter Title Paragraph</a></li>
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/unitalicize-text/">Add Roman Text After Italicized Text, in a Locked Chapter</a></li>
-                    
-                  
-                </ul>
-              
-                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseTypesetAppendix" role="button" aria-expanded="true" aria-controls="collapseTypesetAppendix">Appendix</a></p>
-                <ul class="navbar-nav nav flex-column collapse" id="collapseTypesetAppendix">
-                  
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/custom-attributes/">Add custom HTML attributes</a></li>
-                    
-                  
-                    
-                  
-                    
-                      <li class="nav-item"><a class="nav-link pl-0" href="/list-of-word-styles/">List of Hederis Word Styles</a></li>
-                    
-                  
-                </ul>
-              
+<header class="uk-background-center-center uk-background-cover" style="">
+    <div class="uk-overlay-header" style="">
+
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="http://localhost:4000/uploads/Hederiswordmark_purple@1x.svg" alt="User Guide"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li class="uk-active"><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/docs/quick-start/" >Docs</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="#">Changelogs</a>
+                                        
+                                            <div class="uk-navbar-dropdown">
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    
+                                                    
+                                                        
+                                                        
+                                                        <li><a href="/changelog-timeline/">Timeline Style</a></li>
+                                                    
+                                                    
+                                                    
+                                                        
+                                                        
+                                                        <li><a href="/changelog-posts/">Post Style</a></li>
+                                                    
+                                                    
+                                                </ul>
+                                            </div>
+                                        
+                                        </li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="http://localhost:4000/uploads/Hederiswordmark_purple@1x.svg" alt="User Guide"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-primary-outline" href="/changelog-timeline/" >Changelog</a></div></li>
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
             </div>
-<!--             <div class="tab-pane fade" id="converttab" role="tabpanel" aria-labelledby="convert-tab">
-              
-              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvertAbout" role="button" aria-expanded="true" aria-controls="collapseConvertAbout">About</a></p>
-              <ul class="navbar-nav nav flex-column collapse" id="collapseConvertAbout">
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/quick-start/">Quick Start</a></li>
-                  
-                
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/overview/">Overview</a></li>
-                  
-                
-                  
-                
-              </ul>
-            
-              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvertDashboardandFiles" role="button" aria-expanded="true" aria-controls="collapseConvertDashboardandFiles">Dashboard and Files</a></p>
-              <ul class="navbar-nav nav flex-column collapse" id="collapseConvertDashboardandFiles">
-                
-                  
-                
-                  
-                
-              </ul>
-            
-              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvertManuscriptsandBookText" role="button" aria-expanded="true" aria-controls="collapseConvertManuscriptsandBookText">Manuscripts and Book Text</a></p>
-              <ul class="navbar-nav nav flex-column collapse" id="collapseConvertManuscriptsandBookText">
-                
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/upload-a-manuscript/">Upload a Manuscript</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/semantic-tagging/">About Styles</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/paragraphs-wrappers-and-sections/">Paragraphs, Wrappers, Sections, and Inlines</a></li>
-                  
-                
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/fine-tune-styles/">Working with Microsoft Word</a></li>
-                  
-                
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/add-a-wrapper/">Add a Wrapper</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/add-a-section/">Add a Section</a></li>
-                  
-                
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/autogen-a-toc/">Automatically Generate a Table of Contents</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/setup-a-toc/">Set up a Table of Contents Manually</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/include-custom-content/">Include content only in the PDF or EPUB</a></li>
-                  
-                
-              </ul>
-            
-              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvertDesign" role="button" aria-expanded="true" aria-controls="collapseConvertDesign">Design</a></p>
-              <ul class="navbar-nav nav flex-column collapse" id="collapseConvertDesign">
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/adjust-trim-and-margins/">Adjust PDF trim size and margins</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/add-printer-marks/">Add printer marks</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/view-baseline-grid/">View baseline grid</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/custom-design/">Add special layout instructions</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/custom-paragraph-design/">Customize the design of specific paragraphs, wrappers, or sections</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/global-paragraph-design/">Customize the design of an entire group of paragraphs, wrappers, or sections</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/convert-template-designer/">Create a custom design template</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/custom-design-templates/">Upload a custom design template</a></li>
-                  
-                
-              </ul>
-            
-              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvertPaging" role="button" aria-expanded="true" aria-controls="collapseConvertPaging">Paging</a></p>
-              <ul class="navbar-nav nav flex-column collapse" id="collapseConvertPaging">
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/adjust-line-breaks/">Adjust letter spacing (PDF-only)</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/force-line-break/">Force a line break (PDF-only)</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/force-page-break/">Force a page break (PDF-only)</a></li>
-                  
-                
-              </ul>
-            
-              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvertImages" role="button" aria-expanded="true" aria-controls="collapseConvertImages">Images</a></p>
-              <ul class="navbar-nav nav flex-column collapse" id="collapseConvertImages">
-                
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/add-an-image/">Add an image in Word</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/images-with-captions-etc/">Images with captions, sources, or other extra content</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/upload-a-cover/">Upload a cover file</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/include-full-page-images/">Include full-page images in the PDF</a></li>
-                  
-                
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/grayscale-images/">Grayscale images in the PDF</a></li>
-                  
-                
-              </ul>
-            
-              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvertValidationandPreflight" role="button" aria-expanded="true" aria-controls="collapseConvertValidationandPreflight">Validation and Preflight</a></p>
-              <ul class="navbar-nav nav flex-column collapse" id="collapseConvertValidationandPreflight">
-                
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/pdf-preflight/">PDF preflight and prepress</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/epub-validation/">EPUB Validation</a></li>
-                  
-                
-              </ul>
-            
-              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvertGroupsandBilling" role="button" aria-expanded="true" aria-controls="collapseConvertGroupsandBilling">Groups and Billing</a></p>
-              <ul class="navbar-nav nav flex-column collapse" id="collapseConvertGroupsandBilling">
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-              </ul>
-            
-              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvertHowDoI…" role="button" aria-expanded="true" aria-controls="collapseConvertHowDoI…">How Do I…</a></p>
-              <ul class="navbar-nav nav flex-column collapse" id="collapseConvertHowDoI…">
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-              </ul>
-            
-              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseConvertAppendix" role="button" aria-expanded="true" aria-controls="collapseConvertAppendix">Appendix</a></p>
-              <ul class="navbar-nav nav flex-column collapse" id="collapseConvertAppendix">
-                
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/custom-attributes/">Add custom HTML attributes</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/custom-style-library/">Custom Code Library</a></li>
-                  
-                
-                  
-                    <li class="nav-item"><a class="nav-link pl-0" href="/list-of-word-styles/">List of Hederis Word Styles</a></li>
-                  
-                
-              </ul>
-            
-          </div> -->
-<!--           <ul class="navbar-nav nav flex-column">
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/quick-start/">Quick Start</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/guided-demo/">Guided Demo</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/overview/">Overview</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/sample-workflow/">A Real Sample Workflow</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/dashboard-home/">Dashboard and Files</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/snapshots/">Create a Named Backup</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/manuscripts-home/">Manuscripts and Book Text</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/upload-a-manuscript/">Upload a Manuscript</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/semantic-tagging/">About Styles</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/paragraphs-wrappers-and-sections/">Paragraphs, Wrappers, Sections, and Inlines</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/edit-text-mode/">Styles and the Edit Text Pane</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/fine-tune-styles/">Working with Microsoft Word</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/add-a-paragraph/">Add a Paragraph</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/add-a-wrapper/">Add a Wrapper</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/add-a-section/">Add a Section</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/add-an-inline/">Add an Inline</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/autogen-a-toc/">Automatically Generate a Table of Contents</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/setup-a-toc/">Set up a Table of Contents Manually</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/include-custom-content/">Include content only in the PDF or EPUB</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/design-home/">Design</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/design-templates/">Design Templates</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/typeset-view-toolbar/">The top-right toolbar: Single View, Guides, Grid, and Run Layout</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/baseline-grid/">Working with the Baseline Grid</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/typeset-left-sidebar/">The left sidebar: Design tools</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/typeset-general-design/">General Page Design</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/typeset-master-pages/">Page Templates</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/typeset-text-design/">Sections & Text</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/typeset-sect-design/">Designing SECT elements (sections)</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/typeset-box-design/">Designing BOX elements (wrappers)</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/typeset-para-design/">Designing text paragraphs</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/custom-font/">Use a Custom Font</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/selectors/">Adjusting the design of only certain paragraphs</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/adjust-trim-and-margins/">Adjust PDF trim size and margins</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/add-printer-marks/">Add printer marks</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/view-baseline-grid/">View baseline grid</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/custom-design/">Add special layout instructions</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/custom-paragraph-design/">Customize the design of specific paragraphs, wrappers, or sections</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/global-paragraph-design/">Customize the design of an entire group of paragraphs, wrappers, or sections</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/convert-template-designer/">Create a custom design template</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/custom-design-templates/">Upload a custom design template</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/paging-home/">Paging</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/page-locking/">Lock chapters to prevent reflow</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/locked-changes/">Make Changes to a Locked Chapter</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/page-layout-menu/">Adjusting letter spacing, line breaks, and page breaks (PDF-only)</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/adjust-line-breaks/">Adjust letter spacing (PDF-only)</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/force-line-break/">Force a line break (PDF-only)</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/force-page-break/">Force a page break (PDF-only)</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/images-home/">Images</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/add-an-image/">Add an image in Word</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/images-with-captions-etc/">Images with captions, sources, or other extra content</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/upload-a-cover/">Upload a cover file</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/include-full-page-images/">Include full-page images in the PDF</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/resize-images/">Resize an image in the design preview</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/grayscale-images/">Grayscale images in the PDF</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/validation-home/">Validation and Preflight</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/pdf-preflight/">PDF preflight and prepress</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/epub-validation/">EPUB Validation</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/groups-home/">Groups and Billing</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/billing-info/">Add Your Billing Information</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/about-groups/">About Groups</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/create-group/">Create a Group</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/group-billing/">Set Up Billing for Your Group</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/examples-home/">How Do I…</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/hanging-indent/">Create a Hanging Indent</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/line-space-ornament/">Add an Ornamental Image to a Line Space Paragraph</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/chapter-ornament-inline/">Add an Ornamental Image on the Same Line as a Chapter Title Paragraph</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/unitalicize-text/">Add Roman Text After Italicized Text, in a Locked Chapter</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/appendix-home/">Appendix</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/custom-attributes/">Add custom HTML attributes</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/custom-style-library/">Custom Code Library</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link pl-0" href="/list-of-word-styles/">List of Hederis Word Styles</a>
-              </li>
-            
-          </ul> -->
         </div>
-      </div>
-      </nav>
-    </div>
+    </nav>
+</div>
 
-    <div class="col-md-7 offset-md-1 two-col-text-block" id="main_content">
-      <div class="row">
-          <div class="col-md-12">
-            <section data-type="chapter" class="hsecchapter" data-hederis-type="hsecchapter" id="documentation-home" data-pi-attrs="id: documentation-home" role="doc-chapter" data-author-name=" " data-book-title=" " title="Hederis Documentation"><h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="pnyYt1Izx">Hederis Documentation</h1><p class="hblkp" data-hederis-type="hblkp" id="pp0AsnJfR">Hederis is a professional book publishing tool for creating beautiful, high-quality books. You provide a single Microsoft Word file containing your full book text along with any images that you use in the book (and a cover file if you&#8217;ve got one), and Hederis will process it automatically into a laid-out PDF, and a fully-accessible and standards-conformant EPUB file. You&#8217;ll also get an updated Microsoft Word file and an HTML version of your book. You can reuse a single design template for all of your books, or customize the design of every book you publish through Hederis, and adjust the line breaks and page breaks on any page as needed. </p><p class="hblkp" data-hederis-type="hblkp" id="pIU9dhcgX">In the navigation menu, you&#8217;ll see a list of all the topics in this documentation, which should also give you a sense of all the things you can do with Hederis.</p><p class="hblkp" data-hederis-type="hblkp" id="pSiYbBJTa">First and foremost, <strong data-hederis-type="hspanstrong" id="pPg9C2x8I">please use Google Chrome when working in the <strong class="hspanstrong" data-hederis-type="hspanstrong" id="p48jCI3Q7">Hederis App</strong></strong>. We use cutting-edge web technology to make our tools work, and Chrome is the best browser for this technology. <a href="https://www.google.com/chrome/" data-hederis-type="hspana" id="p8a0Q4rWe"><span class="Hyperlink" data-hederis-type="hspnspan" id="pam1zFy3o">You can download Chrome here</span></a>.</p><p class="hblkp" data-hederis-type="hblkp" id="pKZCfSB2p"><strong class="hspanstrong" data-hederis-type="hspanstrong" id="pBGrAgFta">Here are some useful links to get you started:</strong></p><p class="hblkp" data-hederis-type="hblkp" id="pbVO9VoDF">The first thing you want to do is <a href="/upload-a-manuscript/" data-hederis-type="hspana" id="pIn8SEsWk"><span class="Hyperlink" data-hederis-type="hspnspan" id="pa14FQTfM">upload a manuscript</span></a>.</p><p class="hblkp" data-hederis-type="hblkp" id="pNZrf8uEW"><strong class="hspanstrong" data-hederis-type="hspanstrong" id="pIWT6RNqT">After you&#8217;ve uploaded a manuscript for the first time:</strong></p><p class="hblkp" data-hederis-type="hblkp" id="pKTpStEgX"><a href="/paragraphs-wrappers-and-sections/" data-hederis-type="hspana" id="pdMtz6w6i"><span class="Hyperlink" data-hederis-type="hspnspan" id="prDEN0Zdw">Make sure you understand the difference between paragraphs, wrappers, and sections</span></a></p><p class="hblkp" data-hederis-type="hblkp" id="pxHmkbXts"><a href="/fine-tune-styles/" data-hederis-type="hspana" id="piJxVlrtk"><span class="Hyperlink" data-hederis-type="hspnspan" id="pA4tFmMVI">Adjust the Word Styles and tagging in your updated Word file</span></a></p><p class="hblkp" data-hederis-type="hblkp" id="pYfZKuK9q"><a href="/add-an-image/" data-hederis-type="hspana" id="pOxMsqSP2"><span class="Hyperlink" data-hederis-type="hspnspan" id="pZCaxWwb3">Add any images that you want to use in the book</span></a></p><p class="hblkp" data-hederis-type="hblkp" id="paYrA1XRB"><strong class="hspanstrong" data-hederis-type="hspanstrong" id="psjGzNFuP">And of course, you&#8217;ll want to design your book:</strong></p><p class="hblkp" data-hederis-type="hblkp" id="pa1pcZWFu"><a href="/design-templates/" data-hederis-type="hspana" id="plBq6KNnM"><span class="Hyperlink" data-hederis-type="hspnspan" id="poKppwUQw">Import a design from the built-in templates or from another book</span></a></p><p class="hblkp" data-hederis-type="hblkp" id="pbnGCn4WZ"><a href="/typeset-text-design/" data-hederis-type="hspana" id="pVsJZZG1i"><span class="Hyperlink" data-hederis-type="hspnspan" id="pnwGHhJ7A">Customize the design of your text</span></a></p><p class="hblkp" data-hederis-type="hblkp" id="pZ4cttCEH"><a href="/typeset-master-pages/" data-hederis-type="hspana" id="peb7lyM2S"><span class="Hyperlink" data-hederis-type="hspnspan" id="ppNSOaGvz">Set up your running headers and footers</span></a></p><p class="hblkp" data-hederis-type="hblkp" id="py6fzgwmm"><a href="/page-locking/" data-hederis-type="hspana" id="pX7bEL5Be"><span class="Hyperlink" data-hederis-type="hspnspan" id="pgzV6t00D">Lock your line breaks and page breaks so they can be reviewed</span></a></p><p class="hblkp" data-hederis-type="hblkp" id="pnJp18Nf4"><strong class="hspanstrong" data-hederis-type="hspanstrong" id="pnPqmPdC9">You&#8217;ll need to take a few extra steps to prepare your files for distribution:</strong></p><p class="hblkp" data-hederis-type="hblkp" id="pS745xM4o"><a href="/pdf-preflight/" data-hederis-type="hspana" id="pLNawGLLk"><span class="Hyperlink" data-hederis-type="hspnspan" id="p6Lmuxqs1">PDF preflight</span></a></p><p class="hblkp" data-hederis-type="hblkp" id="p2MAJxZN1"><a href="/epub-validation/" data-hederis-type="hspana" id="p0TDvsy29"><span class="Hyperlink" data-hederis-type="hspnspan" id="p8cJGPuU7">EPUB validation</span></a></p><p class="hblkp" data-hederis-type="hblkp" id="pYms8txfz">And finally, <a href="/sample-workflow/" data-hederis-type="hspana" id="pyn70T5cp"><span class="Hyperlink" data-hederis-type="hspnspan" id="pvOnYJdTN">here&#8217;s a sample workflow that you could follow as you use Hederis for your book production</span></a>, but we&#8217;re always happy to meet with your team to help put together a workflow that works for you &#8211; email us at <a href="mailto:info@hederis.com" data-hederis-type="hspana" id="p9O91p3aH"><span class="Hyperlink" data-hederis-type="hspnspan" id="plSbXEdIc">info@hederis.com</span></a>. </p></section>
-            <div class="PageNavigation text-center">
-              
-              
+        <div class="uk-section section-hero uk-position-relative" data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+            <div class="uk-container uk-container-small">
+                
+                <p class="hero-image uk-text-center"><img src="http://localhost:4000/uploads/hederis_bookwriting.png" alt="Hero"></p>
+                
+                <h1 class="uk-heading-primary uk-text-center uk-margin-remove-top">How can we help you?</h1>
+                <p class="uk-text-lead uk-text-center">Search or browse in depth articles and videos on everything Hederis, from getting started to advanced design concepts, page layout tools, preflighting, and more.</p>
+
+                
+                <div class="hero-search">
+
+                    <!-- Html Elements for Search -->
+                    <div class="uk-position-relative">
+                        <form class="uk-search uk-search-default uk-width-1-1" name="search-hero" onsubmit="return false;">
+                            <span class="uk-search-icon-flip" data-uk-search-icon></span>
+                            <input id="search-hero" class="uk-search-input uk-box-shadow-large" type="search" placeholder="Search for answers" autocomplete="off">
+                        </form>
+                        <ul id="search-hero-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                    </div>
+
+                    <script>
+                    SimpleJekyllSearch({
+                        searchInput: document.getElementById('search-hero'),
+                        resultsContainer: document.getElementById('search-hero-results'),
+                        noResultsText: '<li class="no-results">No results found</li>',
+                        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                        json: "/search.json"
+                    });
+
+                    searchResults("search-hero");
+
+                    </script>
+
+                </div>
+                
+
             </div>
-          </div>
-      </div>
-    </div>
-  </div>
+        </div>
 
-  <div class="row panel-dark" id="footer-full">
-    <div class="col-md-12">
-        <ul class="ml-0 pl-0 footer-info">
-          <li class="">&copy; 2018 Hederis</li>
-          <li class=""><a href="mailto:info@hederis.com">Contact Us</a></li>
+    </div>
+</header>
+    
+
+    
+    
+<div class="uk-section">
+    <div class="uk-container">
+
+        
+            <h2 class="uk-h1 uk-text-center">Browse Topics</h2>
+        
+
+        <p class="uk-text-lead uk-text-center">Chose an option that you need help with or search above</p>
+
+        <div class="uk-child-width-1-3@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid="">
+        
+            
+            
+            
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-radius-large border-xlight">
+                    <a class="uk-position-cover" href="/docs/quick-start/"></a>
+                    
+                    <span data-uk-icon="icon: location; ratio: 3.4" class=""></span>
+                    
+                    <h3 class="uk-card-title uk-margin">Getting Started</h3>
+                    
+                    <p>Get up-and-running with Hederis basics</p>
+                    
+                </div>
+            </div>
+            
+        
+            
+            
+            
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-radius-large border-xlight">
+                    <a class="uk-position-cover" href="/docs/upload-a-manuscript/"></a>
+                    
+                    <span data-uk-icon="icon: file-text; ratio: 3.4" class=""></span>
+                    
+                    <h3 class="uk-card-title uk-margin">File Management, Uploads, and Downloads</h3>
+                    
+                    <p>Learn all about how to handle files in Hederis</p>
+                    
+                </div>
+            </div>
+            
+        
+            
+            
+            
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-radius-large border-xlight">
+                    <a class="uk-position-cover" href="/docs/semantic-tagging/"></a>
+                    
+                    <span data-uk-icon="icon: file-edit; ratio: 3.4" class=""></span>
+                    
+                    <h3 class="uk-card-title uk-margin">Working with Book Text</h3>
+                    
+                    <p>Microsoft Word, our different paragraph styles, and tools for working with text</p>
+                    
+                </div>
+            </div>
+            
+        
+            
+            
+            
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-radius-large border-xlight">
+                    <a class="uk-position-cover" href="/docs/design-templates/"></a>
+                    
+                    <span data-uk-icon="icon: paint-bucket; ratio: 3.4" class=""></span>
+                    
+                    <h3 class="uk-card-title uk-margin">Design</h3>
+                    
+                    <p>Trim sizes, master pages (a.k.a. page templates), text design, and more!</p>
+                    
+                </div>
+            </div>
+            
+        
+            
+            
+            
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-radius-large border-xlight">
+                    <a class="uk-position-cover" href="/docs/page-locking/"></a>
+                    
+                    <span data-uk-icon="icon: copy; ratio: 3.4" class=""></span>
+                    
+                    <h3 class="uk-card-title uk-margin">Paging</h3>
+                    
+                    <p>Tools for tweaking your line- and page-breaks</p>
+                    
+                </div>
+            </div>
+            
+        
+            
+            
+            
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-radius-large border-xlight">
+                    <a class="uk-position-cover" href="/docs/add-an-image/"></a>
+                    
+                    <span data-uk-icon="icon: image; ratio: 3.4" class=""></span>
+                    
+                    <h3 class="uk-card-title uk-margin">Images</h3>
+                    
+                    <p>How to include images in your text, add fullpage images and covers, and more</p>
+                    
+                </div>
+            </div>
+            
+        
+            
+            
+            
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-radius-large border-xlight">
+                    <a class="uk-position-cover" href="/docs/epub-validation/"></a>
+                    
+                    <span data-uk-icon="icon: check; ratio: 3.4" class=""></span>
+                    
+                    <h3 class="uk-card-title uk-margin">Validation and Preflight</h3>
+                    
+                    <p>Make sure your files are valid and ready for distribution</p>
+                    
+                </div>
+            </div>
+            
+        
+            
+            
+            
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-radius-large border-xlight">
+                    <a class="uk-position-cover" href="/docs/about-groups/"></a>
+                    
+                    <span data-uk-icon="icon: credit-card; ratio: 3.4" class=""></span>
+                    
+                    <h3 class="uk-card-title uk-margin">Groups and Billing</h3>
+                    
+                    <p>What is a group? How do I create one? How does billing work?</p>
+                    
+                </div>
+            </div>
+            
+        
+            
+            
+            
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-radius-large border-xlight">
+                    <a class="uk-position-cover" href="/docs/hanging-indent/"></a>
+                    
+                    <span data-uk-icon="icon: lifesaver; ratio: 3.4" class=""></span>
+                    
+                    <h3 class="uk-card-title uk-margin">How-To Articles</h3>
+                    
+                    <p>Step-by-step tutorials about specific tasks, as requested by users like you</p>
+                    
+                </div>
+            </div>
+            
+        
+            
+            
+            
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-radius-large border-xlight">
+                    <a class="uk-position-cover" href="/docs/list-of-word-styles/"></a>
+                    
+                    <span data-uk-icon="icon: cog; ratio: 3.4" class=""></span>
+                    
+                    <h3 class="uk-card-title uk-margin">Resources</h3>
+                    
+                    <p>An appendix of useful resources, like a complete list of all our styles</p>
+                    
+                </div>
+            </div>
+            
+        
+        </div>
+
+    </div>
+</div>
+
+<div class="uk-section section-featured">
+    <div class="uk-container uk-container-small">
+
+        
+        <h2 class="uk-h1 uk-text-center">Popular Articles</h2>
+        
+
+        
+            <p class="uk-text-center uk-text-lead">Selected featured articles to get you started fast in Jekyll</p>
+        
+        
+        <ul class="uk-list uk-list-large uk-margin-medium-top">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
         </ul>
 
-        <ul class="mr-0 pr-0 footer-credits">
-          <li class="">Site Design by Ian Crowther</li>
-        </ul>
     </div>
-  </div>
+</div>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- 
 
-<script>
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  });
-</script>
+<div class="uk-section section-videos">
+    <div class="uk-container uk-container-small">
 
-</body>
+        
+            <h2 class="uk-h1 uk-text-center">Video Tutorials</h2>
+        
+
+        <p class="uk-text-lead uk-text-center">Watch screencasts to get you started fast with Jekyll</p>
+
+        <div class="uk-child-width-1-2@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid data-uk-lightbox>
+        
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-small uk-box-shadow-hover-medium uk-card-body uk-inline border-radius-large border-xlight">
+                    <a class="uk-position-cover" href="https://youtu.be/T1itpPvFWHI" data-caption="Jekyll Introduction"></a>
+                    <span data-uk-icon="icon: play-circle; ratio: 3.4" class=""></span>
+                    <h3 class="uk-card-title uk-margin">Jekyll Introduction</h3>
+                    
+                    <p>Overview of the most popular static generator</p>
+                    
+                </div>
+            </div>
+        
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-small uk-box-shadow-hover-medium uk-card-body uk-inline border-radius-large border-xlight">
+                    <a class="uk-position-cover" href="https://youtu.be/gsYqPL9EFwQ" data-caption="Creating a post"></a>
+                    <span data-uk-icon="icon: play-circle; ratio: 3.4" class=""></span>
+                    <h3 class="uk-card-title uk-margin">Creating a post</h3>
+                    
+                    <p>Lean how to publish your first post in Jekyll</p>
+                    
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+</div>
+
+<div class="uk-section">
+    <div class="uk-container uk-container-small">
+
+        
+            <h2 class="uk-h1 uk-text-center">Frequently asked questions</h2>
+        
+
+        
+            <p class="uk-text-center uk-text-lead">Find quicke answers to frequent pre-sale questions asked by customers</p>
+        
+
+        
+
+        <ul class="uk-margin-medium-top" data-uk-accordion="multiple: true">
+            
+                <li>
+                    <a class="uk-accordion-title uk-box-shadow-hover-small" href="#">Do you provide customer support?</a>
+                    <div class="article-content uk-accordion-content link-primary"><p>Having support for your purchased item means that we will be available to you to iron out any potential issues you have in using the item.</p>
+
+<h4 id="the-item-support-period">The item support period</h4>
+<p>The item includes support for 6 months from the purchase date. If you’re about to purchase the item, you’ll have the option to purchase extended item support, increasing the item support period up to a maximum of 12 months from the date of purchase.</p>
+
+<h4 id="what-else-is-included">What else is included?</h4>
+<p>Answering questions about how to use the item
+Answering technical questions about the item (and included third party assets)
+Help with defects in the item or included third-party assets
+Item updates to ensure ongoing compatibility and to resolve security vulnerabilities
+Updates to ensure the item works as described and is protected against major security concerns
+Included version updates for all items</p>
+
+<h4 id="whats-not-included-in-item-support">What’s not included in item support?</h4>
+<p>Item support does not include services to modify or extend the item beyond the original features, style and functionality described on the item page. For customization services that will help you tailor the item to your specific requirements, we recommend contacting us to see if we privately offer paid customization service.</p>
+
+<ul>
+  <li>Installation of the item</li>
+  <li>Hosting, server environment, or software</li>
+  <li>Help from authors of included third-party assets</li>
+</ul>
+
+<h4 id="contacting-support">Contacting support</h4>
+<p>Support is provided Mon - Fri through item <a href="https://themeforest.net/item/docs-responsive-documentation-manual-jekyll-theme/21131076/support">support</a> page.</p>
+</div>                
+                </li>
+            
+                <li>
+                    <a class="uk-accordion-title uk-box-shadow-hover-small" href="#">Are updates and bug fixes included in the cost of the item?</a>
+                    <div class="article-content uk-accordion-content link-primary"><p>Regardless of whether you have support or not:</p>
+
+<ul>
+  <li>When we release an update, it will be available for you to download for free</li>
+  <li>You can report bugs</li>
+  <li>You can expect us to keep the item in good working order, working as described and protected against major security issues</li>
+</ul>
+</div>                
+                </li>
+            
+                <li>
+                    <a class="uk-accordion-title uk-box-shadow-hover-small" href="#">Can I extend or renew my item support?</a>
+                    <div class="article-content uk-accordion-content link-primary"><h4 id="item-support-option">Item support option</h4>
+<p>The support options available to you depend on when you make the support purchase.</p>
+
+<ul>
+  <li>A support upgrade is 6 months of additional support that can be purchased at the time of buying the item.</li>
+  <li>A support extension is 6 months of support that can be purchased at any time after the initial purchase of the item, provided the current support period hasn’t expired.</li>
+  <li>A support renewal is 6 months of support that can be purchased after any existing support for an item has expired.</li>
+</ul>
+
+<h4 id="how-do-i-renew-or-extend-my-support">How do I renew or extend my support?</h4>
+<p>In order to extend or renew an item’s support offering, you must have less than 6 months of the existing support period remaining and also the author must still be offering support on their item.</p>
+
+<p>To renew the support component on an item, please follow these steps:</p>
+
+<ul>
+  <li>Log in to your account</li>
+  <li>Hover over your username and click ‘Downloads’ from the drop-down menu.</li>
+  <li>The downloads section displays a list of all the items purchased using your account.</li>
+  <li>Click on ‘Renew support now!’ or ‘Extend now’ next to the item you wish to renew the item support for and that’s it!</li>
+</ul>
+</div>                
+                </li>
+            
+                <li>
+                    <a class="uk-accordion-title uk-box-shadow-hover-small" href="#">Does the item come with installation and setup documentation?</a>
+                    <div class="article-content uk-accordion-content link-primary"><p>Yes, all our items come with either bundled documentation located in your “All files &amp; documentation” download zip or online documentation.</p>
+</div>                
+                </li>
+            
+                <li>
+                    <a class="uk-accordion-title uk-box-shadow-hover-small" href="#">Do you provide customization services for your items?</a>
+                    <div class="article-content uk-accordion-content link-primary"><p>Item support does not include services to modify or extend the item beyond the original features, style and functionality described on the item page.</p>
+
+<p>For customization services that will help you tailor the item to your specific requirements, please <a href="https://themeforest.net/item/docs-responsive-documentation-manual-jekyll-theme/21131076/support">contact us</a> to see if we are available to offer paid customization service or check out service providers on <a href="https://studio.envato.com/">Envato Studio</a>.</p>
+</div>                
+                </li>
+            
+        </ul>
+
+    </div>
+</div> -->
+
+<!-- <div class="uk-section section-team">
+    <div class="uk-container uk-container-expand">
+
+        
+            <h2 class="uk-h1 uk-text-center">We are here to help</h2>
+        
+
+        <p class="uk-text-lead uk-text-center">Our team is just an email away ready to answer your questions</p>
+
+        <div class="uk-margin-medium-top uk-grid-small uk-flex-center uk-text-center uk-margin-medium-top" data-uk-grid>
+
+        
+
+        
+
+            
+
+            <div>
+                <div class="uk-card">
+                    
+                    <h5 class="uk-margin-remove-bottom uk-margin-top"></h5>
+                    <p class="uk-article-meta uk-margin-remove-bottom uk-margin-small-top"></p>
+                </div>
+            </div>
+        
+
+            
+
+            <div>
+                <div class="uk-card">
+                    
+                        
+
+                        <img class="uk-border-circle" src="http://localhost:4000/uploads/avatar-john.png" alt="John Buster Bylander">
+                    
+                    <h5 class="uk-margin-remove-bottom uk-margin-top">John Buster Bylander</h5>
+                    <p class="uk-article-meta uk-margin-remove-bottom uk-margin-small-top">Product</p>
+                </div>
+            </div>
+        
+
+            
+
+            <div>
+                <div class="uk-card">
+                    
+                    <h5 class="uk-margin-remove-bottom uk-margin-top"></h5>
+                    <p class="uk-article-meta uk-margin-remove-bottom uk-margin-small-top"></p>
+                </div>
+            </div>
+        
+
+            
+
+            <div>
+                <div class="uk-card">
+                    
+                    <h5 class="uk-margin-remove-bottom uk-margin-top"></h5>
+                    <p class="uk-article-meta uk-margin-remove-bottom uk-margin-small-top"></p>
+                </div>
+            </div>
+        
+
+            
+
+            <div>
+                <div class="uk-card">
+                    
+                    <h5 class="uk-margin-remove-bottom uk-margin-top"></h5>
+                    <p class="uk-article-meta uk-margin-remove-bottom uk-margin-small-top"></p>
+                </div>
+            </div>
+        
+
+            
+
+            <div>
+                <div class="uk-card">
+                    
+                    <h5 class="uk-margin-remove-bottom uk-margin-top"></h5>
+                    <p class="uk-article-meta uk-margin-remove-bottom uk-margin-small-top"></p>
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+</div> -->
+
+<div class="uk-section uk-text-center">
+    <div class="uk-container uk-container-small">
+        <div data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+            <h2 class="uk-h1 uk-margin-bottom">Didn't find an answer?</h2>
+            <p class="uk-text-lead uk-text-center">Get in touch with us for details on setup and additional custom services pricing</p>
+            <a class="uk-button uk-button-primary uk-button-large uk-margin-medium-top" href="/contact/">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+        <h5 class="uk-margin-top">Getting Started</h5>
+        <ul class="uk-nav uk-nav-default doc-nav">
+        
+          
+          
+          <li class=""><a href="/docs/quick-start/">Quick Start</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/guided-demo/">Guided Demo</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/sample-workflow/">A Real Sample Workflow</a></li>
+        
+        </ul>
+        
+        <h5 class="uk-margin-top">File Management, Uploads, and Downloads</h5>
+        <ul class="uk-nav uk-nav-default doc-nav">
+        
+          
+          
+          <li class=""><a href="/docs/upload-a-manuscript/">Upload a Manuscript</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/snapshots/">Create a Named Backup</a></li>
+        
+        </ul>
+        
+        <h5 class="uk-margin-top">Working with Book Text</h5>
+        <ul class="uk-nav uk-nav-default doc-nav">
+        
+          
+          
+          <li class=""><a href="/docs/semantic-tagging/">About Styles</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/paragraphs-wrappers-and-sections/">Paragraphs, Wrappers, Sections, and Inlines</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/edit-text-mode/">Styles and the Edit Text Pane</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/fine-tune-styles/">Working with Microsoft Word</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/add-a-paragraph/">Add a Paragraph</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/add-a-wrapper/">Add a Wrapper</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/add-a-section/">Add a Section</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/add-an-inline/">Add an Inline</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/autogen-a-toc/">Automatically Generate a Table of Contents</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/setup-a-toc/">Set up a Table of Contents Manually</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/include-custom-content/">Include content only in the PDF or EPUB</a></li>
+        
+        </ul>
+        
+        <h5 class="uk-margin-top">Design</h5>
+        <ul class="uk-nav uk-nav-default doc-nav">
+        
+          
+          
+          <li class=""><a href="/docs/design-templates/">Design Templates</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/typeset-view-toolbar/">The top-right toolbar: Single View, Guides, Grid, and Run Layout</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/baseline-grid/">Working with the Baseline Grid</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/typeset-left-sidebar/">The left sidebar: Design tools</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/typeset-general-design/">General Page Design</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/typeset-master-pages/">Page Templates</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/typeset-text-design/">Sections & Text</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/typeset-sect-design/">Designing SECT elements (sections)</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/typeset-box-design/">Designing BOX elements (wrappers)</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/typeset-para-design/">Designing text paragraphs</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/custom-font/">Use a Custom Font</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/selectors/">Adjusting the design of only certain paragraphs</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/add-printer-marks/">Add printer marks</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/custom-design/">Add special layout instructions</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/custom-design-templates/">Upload a custom design template</a></li>
+        
+        </ul>
+        
+        <h5 class="uk-margin-top">Paging</h5>
+        <ul class="uk-nav uk-nav-default doc-nav">
+        
+          
+          
+          <li class=""><a href="/docs/page-locking/">Lock chapters to prevent reflow</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/locked-changes/">Make Changes to a Locked Chapter</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/page-layout-menu/">Adjusting letter spacing, line breaks, and page breaks (PDF-only)</a></li>
+        
+        </ul>
+        
+        <h5 class="uk-margin-top">Images</h5>
+        <ul class="uk-nav uk-nav-default doc-nav">
+        
+          
+          
+          <li class=""><a href="/docs/add-an-image/">Add an image in Word</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/images-with-captions-etc/">Images with captions, sources, or other extra content</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/upload-a-cover/">Upload a cover file</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/include-full-page-images/">Include full-page images in the PDF</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/resize-images/">Resize an image in the design preview</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/grayscale-images/">Grayscale images in the PDF</a></li>
+        
+        </ul>
+        
+        <h5 class="uk-margin-top">Validation and Preflight</h5>
+        <ul class="uk-nav uk-nav-default doc-nav">
+        
+          
+          
+          <li class=""><a href="/docs/pdf-preflight/">PDF preflight and prepress</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/epub-validation/">EPUB Validation</a></li>
+        
+        </ul>
+        
+        <h5 class="uk-margin-top">Groups and Billing</h5>
+        <ul class="uk-nav uk-nav-default doc-nav">
+        
+          
+          
+          <li class=""><a href="/docs/billing-info/">Add Your Billing Information</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/about-groups/">About Groups</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/create-group/">Create a Group</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/group-billing/">Set Up Billing for Your Group</a></li>
+        
+        </ul>
+        
+        <h5 class="uk-margin-top">How Do I…</h5>
+        <ul class="uk-nav uk-nav-default doc-nav">
+        
+          
+          
+          <li class=""><a href="/docs/hanging-indent/">Create a Hanging Indent</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/line-space-ornament/">Add an Ornamental Image to a Line Space Paragraph</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/chapter-ornament-inline/">Add an Ornamental Image on the Same Line as a Chapter Title Paragraph</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/unitalicize-text/">Add Roman Text After Italicized Text, in a Locked Chapter</a></li>
+        
+        </ul>
+        
+        <h5 class="uk-margin-top">Appendix</h5>
+        <ul class="uk-nav uk-nav-default doc-nav">
+        
+          
+          
+          <li class=""><a href="/docs/custom-attributes/">Add custom HTML attributes</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/list-of-word-styles/">List of Hederis Word Styles</a></li>
+        
+        </ul>
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="http://localhost:4000/uploads/Hederiswordmark_purple@1x.svg" alt="User Guide"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li class="uk-active"><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div class="uk-first-column">
+    <a href="https://twitter.com/HederisApp" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+<div>
+    <a href="https://www.instagram.com/" data-uk-icon="icon: instagram" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li class="uk-active"><a href="/" >Home</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="/contact/" >Contact</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div class="uk-first-column">
+    <a href="https://twitter.com/HederisApp" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+<div>
+    <a href="https://www.instagram.com/" data-uk-icon="icon: instagram" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Made by the <a href="https://hederis.com">Hederis</a> team.</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    </body>
+
 </html>
