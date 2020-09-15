@@ -21,3 +21,124 @@
 // Other vendor styles
 // @import "syntax-highlighting/cld";
 @import "syntax-highlighting/bw";
+
+// Custom Hederis styles
+
+*[data-step-type="dashboard"],
+*[data-step-type="design"],
+*[data-step-type="design-design"],
+*[data-step-type="design-pagelayout"],
+*[data-step-type="structure"] {
+  background-color: #DBFFDB;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: auto 40px;
+  padding: 40px 10px 10px 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+*[data-step-type="dashboard"] {
+  background-image: url("../../images/dashboard-mode.png");
+}
+
+*[data-step-type="design"] {
+  background-image: url("../../images/design-mode.png");
+}
+
+*[data-step-type="design-design"] {
+  background-image: url("../../images/design-mode-design.png");
+}
+
+*[data-step-type="design-pagelayout"] {
+  background-image: url("../../images/design-mode-pagelayout.png");
+}
+
+*[data-step-type="structure"] {
+  background-image: url("../../images/edit-mode.png");
+}
+
+*[data-step-type="external"] {
+  background-color: #f8f8ff;
+  padding: 10px 10px 10px 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+*[data-step-type="bifurcate"] {
+  background-image: url("../../images/bifurcated.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75% 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+*[data-step-type="single"] {
+  background-image: url("../../images/single-flow.png");
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: 15px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+*[data-step-type="single"],
+*[data-step-type="bifurcate"] {
+  margin-bottom: 0;
+}
+
+blockquote[data-step-type="single"],
+blockquote[data-step-type="bifurcate"] {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+blockquote[data-step-type="single"],
+blockquote[data-step-type="bifurcate"],
+blockquote[data-step-type="left"],
+blockquote[data-step-type="right"] {
+  border-left-width: 0px;
+}
+
+*[data-step-type="left"] {
+  width: 50%;
+}
+
+*[data-step-type="right"] {
+  width: 50%;
+}
+
+*[data-step-type="start"] {
+  width: 15%;
+  border-width: 0;
+  margin-bottom: 0;
+}
+
+*[data-step-type="end"] {
+  width: 15%;
+  border-width: 0;
+  margin-top: 0;
+}
+
+.article-content figure[data-step-type="start"],
+.article-content figure[data-step-type="end"] {
+  text-align: center;
+  margin: 0 auto 0 auto;
+}
+
+.article-content figure[data-step-type="start"] img,
+.article-content figure[data-step-type="end"] img {
+  border-width: 0;
+  margin: 0 auto 0 auto;
+  border: solid 1px transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border-radius: 0px;
+}
