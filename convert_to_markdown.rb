@@ -13,6 +13,8 @@ def process_file(input, output)
 
   content = content.gsub(/<h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="\S+">[^<]+<\/h1>/, "")
 
+  content = content.gsub(/(src=")(\S+.[pj][np]e?g")/,"\\1/images/\\2")
+
   tags = /data-tags="\S+"/.match(content)[0]
   tags = tags.gsub(/data-tags="/,"").gsub(/"$/,"")
 
@@ -22,7 +24,7 @@ def process_file(input, output)
   puts $directory
   File.open($directory + "/_docs/" + filename, 'w') do |f|
     f.puts "---"
-    f.puts "title: #{mytitle}"
+    f.puts "title: \"#{mytitle}\""
     f.puts "tags: [#{tags}]"
     f.puts "---"
     f.puts " "

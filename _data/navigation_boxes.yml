@@ -8,44 +8,44 @@
 - title: "File Management, Uploads, and Downloads"
   desc: Learn all about how to handle files in Hederis
   icon: file-text
-  doc: upload-a-manuscript
+  doc: intro-file-management
 
 - title: Working with Book Text
   desc: "Microsoft Word, our different paragraph styles, and tools for working with text"
   icon: file-edit
-  doc: semantic-tagging
+  doc: intro-book-text
 
 - title: Design
   desc: "Trim sizes, master pages (a.k.a. page templates), text design, and more!"
   icon: paint-bucket
-  doc: design-templates
+  doc: intro-design
 
 - title: Paging
   desc: Tools for tweaking your line- and page-breaks
   icon: copy
-  doc: page-locking
+  doc: intro-paging
 
 - title: Images
   desc: "How to include images in your text, add fullpage images and covers, and more"
   icon: image
-  doc: add-an-image
+  doc: intro-images
 
 - title: Validation and Preflight
   desc: Make sure your files are valid and ready for distribution
   icon: check
-  doc: epub-validation
+  doc: intro-validation
 
 - title: Groups and Billing
   desc: What is a group? How do I create one? How does billing work?
   icon: credit-card
-  doc: about-groups
+  doc: intro-groups
 
 - title: How-To Articles
   desc: "Step-by-step tutorials about specific tasks, as requested by users like you"
   icon: lifesaver
-  doc: hanging-indent
+  doc: intro-howto
 
 - title: Resources
   desc: "An appendix of useful resources, like a complete list of all our styles"
   icon: cog
-  doc: list-of-word-styles
+  doc: intro-resources

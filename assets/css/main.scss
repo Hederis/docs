@@ -24,6 +24,20 @@
 
 // Custom Hederis styles
 
+aside[data-hederis-type="hwprbox"] {
+  border-left: 6px solid #00ff00;
+  padding-left: 10px;
+  margin: 15px 0 15px 20px;
+}
+
+aside[data-hederis-type="hwprbox"] p[data-hederis-type="hblktype"] {
+  font-weight: bold;
+}
+
+img[data-hederis-type="hblkimg"] {
+  border: 1px solid #808080;
+}
+
 *[data-step-type="dashboard"],
 *[data-step-type="design"],
 *[data-step-type="design-design"],
