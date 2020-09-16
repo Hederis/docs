@@ -1,4 +1,4 @@
-directory = __dir__
+$directory = __dir__
 
 def process_file(input, output)
   fo = File.open(input)
@@ -19,8 +19,8 @@ def process_file(input, output)
   # change link formatting
 
   content = content.gsub(/(href=")(\S+\.)(docx)/, "\\1{% link _docs/\\2md %}")
-
-  File.open(directory + "/_docs/" + filename, 'w') do |f|
+  puts $directory
+  File.open($directory + "/_docs/" + filename, 'w') do |f|
     f.puts "---"
     f.puts "title: #{mytitle}"
     f.puts "tags: [#{tags}]"
@@ -32,22 +32,26 @@ def process_file(input, output)
   fo.close
 end
 
-# if a file is given as a param
+# if a file is given as a param,
+# first param is the input file, 
+# second param is the output filename
 if ARGV[0]
   process_file(ARGV[0],ARGV[1])
 else
   all_files = Dir[__dir__ + "/_word/*.docx"]
   all_files.each do |f|
     puts f
-    res = `python3 /Users/nellie/git/hederis/hederis/api/convert_docs.py #{f} #{directory}/_html/`
+    filename = f.split("/").pop().gsub(".docx",".md")
+    puts filename
+    res = `python3 /Users/nellie/git/hederis/hederis2/api/convert_docs.py #{f} #{$directory}/_html/`
     puts "RESULT"
     res_html = /'fullhtml': '\/Users\/nellie\/git\/hederis\/docs\/_html\/\S+.html/.match(res)
     puts res_html
-    if res_html
-      final_file = res_html.gsub(/'fullhtml': '/,"")
-      process_file(final_file,ARGV[1])
+    if res_html[0]
+      final_file = res_html[0].gsub(/'fullhtml': '/,"")
+      puts final_file
+      process_file(final_file,filename)
     end
-    
   end
 end
 
