@@ -1,0 +1,6 @@
+---
+title: "Paging"
+tags: [typeset]
+---
+ 
+<html><body><section data-type="chapter" class="hsecchapter" data-hederis-type="hsecchapter" id="intro-paging" data-pi-attrs="id: intro-paging; data-tags: typeset;" role="doc-chapter" data-tags="typeset" data-author-name=" " data-book-title=" " title="Paging"><p class="hblkp" data-hederis-type="hblkp" id="p9VSkYCKh">Here are some articles about how to adjust your print page layout in Hederis (you can also find these articles in the navigation menu to the left): </p><p class="hblkp" data-hederis-type="hblkp" id="pig3EeiKX"><a href="{% link _docs/page-locking.md %}" data-hederis-type="hspana" id="pYj5dcMh5"><span class="Hyperlink" data-hederis-type="hspnspan" id="pk2g6PjPN">Lock chapters to prevent reflow</span></a></p><p class="hblkp" data-hederis-type="hblkp" id="pzbcZ46vz"><a href="{% link _docs/locked-changes.md %}" data-hederis-type="hspana" id="pS8DgH3Cf"><span class="Hyperlink" data-hederis-type="hspnspan" id="pcWVi2JWV">Make Changes to a Locked Chapter</span></a></p><p class="hblkp" data-hederis-type="hblkp" id="pKbgnV1A6"><a href="{% link _docs/page-layout-menu.md %}" data-hederis-type="hspana" id="pVPXqy25O"><span class="Hyperlink" data-hederis-type="hspnspan" id="pZ5hlE4G9">Adjust letter spacing by tightening and loosening text (PDF-only)</span></a></p></section></body></html>
