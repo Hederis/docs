@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Validation and Preflight"
-permalink:  /validation-home/
+permalink: /validation-home/
+redirect:  /docs/validation-home/
 categories: [Validation and Preflight]
 tags: []
 published: true

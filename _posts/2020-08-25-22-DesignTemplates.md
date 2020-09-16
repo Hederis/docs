@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Design Templates"
-permalink:  /design-templates/
+permalink: /design-templates/
+redirect:  /docs/design-templates/
 categories: [Design]
 tags: [typeset]
 published: true

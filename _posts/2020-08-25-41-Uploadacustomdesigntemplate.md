@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Upload a custom design template"
-permalink:  /custom-design-templates/
+permalink: /custom-design-templates/
+redirect:  /docs/custom-design-templates/
 categories: [Design]
 tags: [convert,typeset]
 published: true

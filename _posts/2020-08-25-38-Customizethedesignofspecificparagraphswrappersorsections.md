@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Customize the design of specific paragraphs, wrappers, or sections"
-permalink:  /custom-paragraph-design/
+permalink: /custom-paragraph-design/
+redirect:  /docs/custom-paragraph-design/
 categories: [Design]
 tags: [convert]
 published: true

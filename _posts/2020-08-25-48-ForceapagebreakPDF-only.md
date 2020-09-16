@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Force a page break (PDF-only)"
-permalink:  /force-page-break/
+permalink: /force-page-break/
+redirect:  /docs/force-page-break/
 categories: [Paging]
 tags: [convert]
 published: true

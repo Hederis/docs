@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Include content only in the PDF or EPUB"
-permalink:  /include-custom-content/
+permalink: /include-custom-content/
+redirect:  /docs/include-custom-content/
 categories: [Manuscripts and Book Text]
 tags: [convert,typeset]
 published: true

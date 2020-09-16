@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Designing SECT elements (sections)"
-permalink:  /typeset-sect-design/
+permalink: /typeset-sect-design/
+redirect:  /docs/typeset-sect-design/
 categories: [Design]
 tags: [typeset]
 published: true

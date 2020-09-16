@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "List of Hederis Word Styles"
-permalink:  /list-of-word-styles/
+permalink: /list-of-word-styles/
+redirect:  /docs/list-of-word-styles/
 categories: [Appendix]
 tags: [convert,typeset]
 published: true

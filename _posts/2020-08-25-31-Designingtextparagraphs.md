@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Designing text paragraphs"
-permalink:  /typeset-para-design/
+permalink: /typeset-para-design/
+redirect:  /docs/typeset-para-design/
 categories: [Design]
 tags: [typeset]
 published: true

@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Create a Group"
-permalink:  /create-group/
+permalink: /create-group/
+redirect:  /docs/create-group/
 categories: [Groups and Billing]
 tags: [typeset]
 published: true

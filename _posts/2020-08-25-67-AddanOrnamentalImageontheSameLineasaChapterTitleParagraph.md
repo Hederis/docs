@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Add an Ornamental Image on the Same Line as a Chapter Title Paragraph"
-permalink:  /chapter-ornament-inline/
+permalink: /chapter-ornament-inline/
+redirect:  /docs/chapter-ornament-inline/
 categories: [How Do I…]
 tags: [typeset]
 published: true

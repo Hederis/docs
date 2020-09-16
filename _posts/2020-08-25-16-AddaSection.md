@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Add a Section"
-permalink:  /add-a-section/
+permalink: /add-a-section/
+redirect:  /docs/add-a-section/
 categories: [Manuscripts and Book Text]
 tags: [convert,typeset]
 published: true

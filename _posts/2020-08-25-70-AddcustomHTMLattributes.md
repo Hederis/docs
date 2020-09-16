@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Add custom HTML attributes"
-permalink:  /custom-attributes/
+permalink: /custom-attributes/
+redirect:  /docs/custom-attributes/
 categories: [Appendix]
 tags: [convert,typeset]
 published: true

@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Add a Paragraph"
-permalink:  /add-a-paragraph/
+permalink: /add-a-paragraph/
+redirect:  /docs/add-a-paragraph/
 categories: [Manuscripts and Book Text]
 tags: [typeset]
 published: true

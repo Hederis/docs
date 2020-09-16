@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "PDF preflight and prepress"
-permalink:  /pdf-preflight/
+permalink: /pdf-preflight/
+redirect:  /docs/pdf-preflight/
 categories: [Validation and Preflight]
 tags: [convert,typeset]
 published: true

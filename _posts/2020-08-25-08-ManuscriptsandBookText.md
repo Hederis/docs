@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Manuscripts and Book Text"
-permalink:  /manuscripts-home/
+permalink: /manuscripts-home/
+redirect:  /docs/manuscripts-home/
 categories: [Manuscripts and Book Text]
 tags: []
 published: true

@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "The top-right toolbar: Single View, Guides, Grid, and Run Layout"
-permalink:  /typeset-view-toolbar/
+permalink: /typeset-view-toolbar/
+redirect:  /docs/typeset-view-toolbar/
 categories: [Design]
 tags: [typeset]
 published: true

@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Make Changes to a Locked Chapter"
-permalink:  /locked-changes/
+permalink: /locked-changes/
+redirect:  /docs/locked-changes/
 categories: [Paging]
 tags: [typeset]
 published: true

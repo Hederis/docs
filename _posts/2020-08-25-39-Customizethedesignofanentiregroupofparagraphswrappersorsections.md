@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Customize the design of an entire group of paragraphs, wrappers, or sections"
-permalink:  /global-paragraph-design/
+permalink: /global-paragraph-design/
+redirect:  /docs/global-paragraph-design/
 categories: [Design]
 tags: [convert]
 published: true

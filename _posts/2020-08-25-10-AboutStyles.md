@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "About Styles"
-permalink:  /semantic-tagging/
+permalink: /semantic-tagging/
+redirect:  /docs/semantic-tagging/
 categories: [Manuscripts and Book Text]
 tags: [convert,typeset]
 published: true

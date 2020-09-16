@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Set up a Table of Contents Manually"
-permalink:  /setup-a-toc/
+permalink: /setup-a-toc/
+redirect:  /docs/setup-a-toc/
 categories: [Manuscripts and Book Text]
 tags: [convert,typeset]
 published: true

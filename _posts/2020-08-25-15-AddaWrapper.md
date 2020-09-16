@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Add a Wrapper"
-permalink:  /add-a-wrapper/
+permalink: /add-a-wrapper/
+redirect:  /docs/add-a-wrapper/
 categories: [Manuscripts and Book Text]
 tags: [convert,typeset]
 published: true

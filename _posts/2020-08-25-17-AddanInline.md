@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Add an Inline"
-permalink:  /add-an-inline/
+permalink: /add-an-inline/
+redirect:  /docs/add-an-inline/
 categories: [Manuscripts and Book Text]
 tags: [typeset]
 published: true

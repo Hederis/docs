@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Force a line break (PDF-only)"
-permalink:  /force-line-break/
+permalink: /force-line-break/
+redirect:  /docs/force-line-break/
 categories: [Paging]
 tags: [convert]
 published: true

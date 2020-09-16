@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Upload a cover file"
-permalink:  /upload-a-cover/
+permalink: /upload-a-cover/
+redirect:  /docs/upload-a-cover/
 categories: [Images]
 tags: [convert,typeset]
 published: true

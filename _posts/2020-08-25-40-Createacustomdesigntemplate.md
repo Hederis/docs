@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Create a custom design template"
-permalink:  /convert-template-designer/
+permalink: /convert-template-designer/
+redirect:  /docs/convert-template-designer/
 categories: [Design]
 tags: [convert]
 published: true

@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Add Roman Text After Italicized Text, in a Locked Chapter"
-permalink:  /unitalicize-text/
+permalink: /unitalicize-text/
+redirect:  /docs/unitalicize-text/
 categories: [How Do I…]
 tags: [typeset]
 published: true

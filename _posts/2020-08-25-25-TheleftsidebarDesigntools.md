@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "The left sidebar: Design tools"
-permalink:  /typeset-left-sidebar/
+permalink: /typeset-left-sidebar/
+redirect:  /docs/typeset-left-sidebar/
 categories: [Design]
 tags: [typeset]
 published: true

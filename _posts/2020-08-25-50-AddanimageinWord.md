@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Add an image in Word"
-permalink:  /add-an-image/
+permalink: /add-an-image/
+redirect:  /docs/add-an-image/
 categories: [Images]
 tags: [convert,typeset]
 published: true

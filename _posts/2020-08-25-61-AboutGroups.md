@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "About Groups"
-permalink:  /about-groups/
+permalink: /about-groups/
+redirect:  /docs/about-groups/
 categories: [Groups and Billing]
 tags: [typeset]
 published: true

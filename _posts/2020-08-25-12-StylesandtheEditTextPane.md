@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Styles and the Edit Text Pane"
-permalink:  /edit-text-mode/
+permalink: /edit-text-mode/
+redirect:  /docs/edit-text-mode/
 categories: [Manuscripts and Book Text]
 tags: [typeset]
 published: true

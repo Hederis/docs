@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Groups and Billing"
-permalink:  /groups-home/
+permalink: /groups-home/
+redirect:  /docs/groups-home/
 categories: [Groups and Billing]
 tags: []
 published: true

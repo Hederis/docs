@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Automatically Generate a Table of Contents"
-permalink:  /autogen-a-toc/
+permalink: /autogen-a-toc/
+redirect:  /docs/autogen-a-toc/
 categories: [Manuscripts and Book Text]
 tags: [convert,typeset]
 published: true

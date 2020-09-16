@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Adjusting letter spacing, line breaks, and page breaks (PDF-only)"
-permalink:  /page-layout-menu/
+permalink: /page-layout-menu/
+redirect:  /docs/page-layout-menu/
 categories: [Paging]
 tags: [typeset]
 published: true

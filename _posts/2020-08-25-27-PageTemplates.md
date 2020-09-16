@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Page Templates"
-permalink:  /typeset-master-pages/
+permalink: /typeset-master-pages/
+redirect:  /docs/typeset-master-pages/
 categories: [Design]
 tags: [typeset]
 published: true

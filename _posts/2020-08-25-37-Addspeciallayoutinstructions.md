@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Add special layout instructions"
-permalink:  /custom-design/
+permalink: /custom-design/
+redirect:  /docs/custom-design/
 categories: [Design]
 tags: [convert,typeset]
 published: true

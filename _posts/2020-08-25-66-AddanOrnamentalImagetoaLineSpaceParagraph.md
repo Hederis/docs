@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Add an Ornamental Image to a Line Space Paragraph"
-permalink:  /line-space-ornament/
+permalink: /line-space-ornament/
+redirect:  /docs/line-space-ornament/
 categories: [How Do I…]
 tags: [typeset]
 published: true

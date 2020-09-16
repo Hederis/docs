@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Adjusting the design of only certain paragraphs"
-permalink:  /selectors/
+permalink: /selectors/
+redirect:  /docs/selectors/
 categories: [Design]
 tags: [typeset]
 published: true

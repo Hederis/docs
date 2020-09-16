@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Resize an image in the design preview"
-permalink:  /resize-images/
+permalink: /resize-images/
+redirect:  /docs/resize-images/
 categories: [Images]
 tags: [typeset]
 published: true

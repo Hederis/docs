@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Paragraphs, Wrappers, Sections, and Inlines"
-permalink:  /paragraphs-wrappers-and-sections/
+permalink: /paragraphs-wrappers-and-sections/
+redirect:  /docs/paragraphs-wrappers-and-sections/
 categories: [Manuscripts and Book Text]
 tags: [convert,typeset]
 published: true

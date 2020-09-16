@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Adjust letter spacing (PDF-only)"
-permalink:  /adjust-line-breaks/
+permalink: /adjust-line-breaks/
+redirect:  /docs/adjust-line-breaks/
 categories: [Paging]
 tags: [convert]
 published: true

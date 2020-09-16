@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Images with captions, sources, or other extra content"
-permalink:  /images-with-captions-etc/
+permalink: /images-with-captions-etc/
+redirect:  /docs/images-with-captions-etc/
 categories: [Images]
 tags: [convert,typeset]
 published: true

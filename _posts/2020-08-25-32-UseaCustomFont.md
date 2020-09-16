@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Use a Custom Font"
-permalink:  /custom-font/
+permalink: /custom-font/
+redirect:  /docs/custom-font/
 categories: [Design]
 tags: [typeset]
 published: true

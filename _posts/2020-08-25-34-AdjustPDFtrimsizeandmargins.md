@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Adjust PDF trim size and margins"
-permalink:  /adjust-trim-and-margins/
+permalink: /adjust-trim-and-margins/
+redirect:  /docs/adjust-trim-and-margins/
 categories: [Design]
 tags: [convert]
 published: true

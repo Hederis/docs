@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Designing BOX elements (wrappers)"
-permalink:  /typeset-box-design/
+permalink: /typeset-box-design/
+redirect:  /docs/typeset-box-design/
 categories: [Design]
 tags: [typeset]
 published: true

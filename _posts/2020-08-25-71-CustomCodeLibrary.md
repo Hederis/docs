@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Custom Code Library"
-permalink:  /custom-style-library/
+permalink: /custom-style-library/
+redirect:  /docs/custom-style-library/
 categories: [Appendix]
 tags: [convert]
 published: true

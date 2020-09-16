@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "EPUB Validation"
-permalink:  /epub-validation/
+permalink: /epub-validation/
+redirect:  /docs/epub-validation/
 categories: [Validation and Preflight]
 tags: [convert,typeset]
 published: true

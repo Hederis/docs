@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "General Page Design"
-permalink:  /typeset-general-design/
+permalink: /typeset-general-design/
+redirect:  /docs/typeset-general-design/
 categories: [Design]
 tags: [typeset]
 published: true

@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Upload a Manuscript"
-permalink:  /upload-a-manuscript/
+permalink: /upload-a-manuscript/
+redirect:  /docs/upload-a-manuscript/
 categories: [Manuscripts and Book Text]
 tags: [convert,typeset]
 published: true

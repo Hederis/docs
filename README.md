@@ -1,23 +1,20 @@
-# Process
+# Hederis Documentation
 
-Make changes to the Word file in this repo. Make sure that you give every new section you add a custom ID attribute (read the docs to learn how to do this) - this id will be used as the permalink for that section.
+## Contributing
 
-Run through the ingestion toolchain and extract sections. You'll need to uncomment line 3761 in docx_convert.py (the line that starts with "sectionfiles, compiled = ").
+* Create a Microsoft Word file for your new article.
+* Give it a meaningful, searchable name. Think about the terms a user might search for related to your article topic, and try to include those in the article title.
+* Make sure the Word file is tagged using Hederis Word styles.
+* If you need to link to other sections of the documentation, create the link in Microsoft Word, and link to the required .docx file. This link will automatically be converted to a link to the final post, and the link text will be replaced with the linked .docx title.
+* Save the file in the _word folder.
+* Push your branch up to github, and submit a pull request.
 
-Run the preparesite.py script that is in this repo, providing the required paths and filenames, e.g.: 
+## Generating
+
+* Convert any revised or new .docx files to HTML via the standard Hederis scripts.
+* Save the new HTML file in the _html directory.
+* Convert the HTML file to markdown using the included convert_to_markdown.rb script, like this:
 
 ```
-python3 /Users/nellie/git/hederis/docs/preparesite.py -i /Users/nellie/hederis/docs/conversion/ -o /Users/nellie/hederis/docs/gen/ -f /Users/nellie/hederis/docs/conversion/VSgABkJ2sBgf2aPB4ABY.html
+ruby convert_to_markdown.rb _html/html_file.html
 ```
-
-Copy all files *except* for the titlepage ([DATE]_HederisDocumentation.md) into the posts folder.
-
-Copy the `section` content from the titlepage into the site index.html file.
-
-Build the site:
-
-```
-jekyll build
-```
-
-Then add all changed files (git add -A), commit, and push.

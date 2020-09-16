@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Grayscale images in the PDF"
-permalink:  /grayscale-images/
+permalink: /grayscale-images/
+redirect:  /docs/grayscale-images/
 categories: [Images]
 tags: [convert,typeset]
 published: true

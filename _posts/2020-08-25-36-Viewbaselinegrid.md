@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "View baseline grid"
-permalink:  /view-baseline-grid/
+permalink: /view-baseline-grid/
+redirect:  /docs/view-baseline-grid/
 categories: [Design]
 tags: [convert]
 published: true

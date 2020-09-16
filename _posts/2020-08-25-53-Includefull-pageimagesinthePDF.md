@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Include full-page images in the PDF"
-permalink:  /include-full-page-images/
+permalink: /include-full-page-images/
+redirect:  /docs/include-full-page-images/
 categories: [Images]
 tags: [convert,typeset]
 published: true

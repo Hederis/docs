@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Create a Named Backup"
-permalink:  /snapshots/
+permalink: /snapshots/
+redirect:  /docs/snapshots/
 categories: [Dashboard and Files]
 tags: [typeset]
 published: true

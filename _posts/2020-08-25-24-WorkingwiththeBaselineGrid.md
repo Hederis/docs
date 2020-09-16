@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Working with the Baseline Grid"
-permalink:  /baseline-grid/
+permalink: /baseline-grid/
+redirect:  /docs/baseline-grid/
 categories: [Design]
 tags: [typeset]
 published: true

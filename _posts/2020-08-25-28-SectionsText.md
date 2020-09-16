@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Sections & Text"
-permalink:  /typeset-text-design/
+permalink: /typeset-text-design/
+redirect:  /docs/typeset-text-design/
 categories: [Design]
 tags: [typeset]
 published: true

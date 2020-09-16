@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Dashboard and Files"
-permalink:  /dashboard-home/
+permalink: /dashboard-home/
+redirect:  /docs/dashboard-home/
 categories: [Dashboard and Files]
 tags: []
 published: true

@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Set Up Billing for Your Group"
-permalink:  /group-billing/
+permalink: /group-billing/
+redirect:  /docs/group-billing/
 categories: [Groups and Billing]
 tags: [typeset]
 published: true

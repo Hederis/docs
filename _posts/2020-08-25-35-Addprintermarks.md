@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Add printer marks"
-permalink:  /add-printer-marks/
+permalink: /add-printer-marks/
+redirect:  /docs/add-printer-marks/
 categories: [Design]
 tags: [convert,typeset]
 published: true

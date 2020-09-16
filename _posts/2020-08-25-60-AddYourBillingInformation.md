@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Add Your Billing Information"
-permalink:  /billing-info/
+permalink: /billing-info/
+redirect:  /docs/billing-info/
 categories: [Groups and Billing]
 tags: [typeset]
 published: true

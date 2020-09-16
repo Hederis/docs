@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Create a Hanging Indent"
-permalink:  /hanging-indent/
+permalink: /hanging-indent/
+redirect:  /docs/hanging-indent/
 categories: [How Do I…]
 tags: [typeset]
 published: true

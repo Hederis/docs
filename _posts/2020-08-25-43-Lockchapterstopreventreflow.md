@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Lock chapters to prevent reflow"
-permalink:  /page-locking/
+permalink: /page-locking/
+redirect:  /docs/page-locking/
 categories: [Paging]
 tags: [typeset]
 published: true

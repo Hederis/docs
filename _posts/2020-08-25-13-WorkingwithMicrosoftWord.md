@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: redirect
 title:  "Working with Microsoft Word"
-permalink:  /fine-tune-styles/
+permalink: /fine-tune-styles/
+redirect:  /docs/fine-tune-styles/
 categories: [Manuscripts and Book Text]
 tags: [convert,typeset]
 published: true
