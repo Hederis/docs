@@ -1,5 +1,5 @@
 ---
-title: "About Galley &amp; Digital Mode"
+title: "About Galley And Digital Mode"
 tags: [typeset,featured]
 ---
  
