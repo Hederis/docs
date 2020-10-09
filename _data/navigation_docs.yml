@@ -3,6 +3,7 @@
   - quick-start
   - guided-demo
   - sample-workflow
+  - galley-and-digital-mode
 
 - title: "File Management, Uploads, and Downloads"
   docs:
@@ -38,6 +39,7 @@
   - custom-font
   - selectors
   - add-printer-marks
+  - add-watermark
   - custom-design
   - custom-design-templates
 
