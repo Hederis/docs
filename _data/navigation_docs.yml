@@ -45,6 +45,7 @@
 
 - title: Paging
   docs:
+  - chapter-start-recto
   - page-locking
   - locked-changes
   - page-layout-menu
@@ -53,6 +54,7 @@
   docs:
   - add-an-image
   - images-with-captions-etc
+  - replace-an-image
   - upload-a-cover
   - include-full-page-images
   - resize-images
@@ -60,8 +62,9 @@
 
 - title: Validation and Preflight
   docs:
-  - pdf-preflight
   - epub-validation
+  - convert-to-kindle
+  - pdf-preflight
 
 - title: Groups and Billing
   docs:
