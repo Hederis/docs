@@ -1,5 +1,5 @@
 ---
-title: "Use the &#8220;Limit these changes&#8221; Menu to Adjust the Design of Only Certain Paragraphs or Elements"
+title: "Use the 'Limit these changes' Menu to Adjust the Design of Only Certain Paragraphs or Elements"
 tags: [typeset,featured]
 ---
  
