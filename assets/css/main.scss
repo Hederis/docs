@@ -38,6 +38,11 @@ img[data-hederis-type="hblkimg"] {
   border: 1px solid #808080;
 }
 
+p[data-hederis-type="hblkcaption"] {
+  font-style: italic;
+  font-size: 0.9em;
+}
+
 *[data-step-type="dashboard"],
 *[data-step-type="design"],
 *[data-step-type="design-design"],
