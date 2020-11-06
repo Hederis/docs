@@ -29,3 +29,19 @@ ruby convert_to_markdown.rb _html/html_file.html
 ```
 ruby convert_to_markdown.rb
 ```
+
+### Push to Repo
+
+Once the files are converted, add all changed files to your commit:
+
+```
+git add -u
+```
+
+Then commit:
+
+```
+git commit -m'your message here'
+```
+
+And push!

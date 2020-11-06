@@ -38,6 +38,7 @@
   - typeset-para-design
   - custom-font
   - selectors
+  - design-settings-and-inheritance
   - add-printer-marks
   - add-watermark
   - custom-design
@@ -52,6 +53,7 @@
 
 - title: Images
   docs:
+  - image_best_practices
   - add-an-image
   - images-with-captions-etc
   - replace-an-image
