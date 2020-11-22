@@ -9,7 +9,7 @@ def process_file(input, output)
 
   # get then delete the title
   mytitle = /(<h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="\S+">)([^<]+)(<\/h1>)/.match(content)[0]
-  mytitle = mytitle.gsub(/<h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="\S+">/,"").gsub(/<\/h1>/,"")
+  mytitle = mytitle.gsub(/<h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="\S+">/,"").gsub(/<\/h1>/,"").gsub(/"/,"'")
 
   content = content.gsub(/<h1 data-hederis-type="hblkchaptitle" class="hblkchaptitle" id="\S+">[^<]+<\/h1>/, "")
 
