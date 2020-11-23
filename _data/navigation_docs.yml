@@ -60,6 +60,7 @@
   - upload-a-cover
   - include-full-page-images
   - resize-images
+  - center-an-image
   - grayscale-images
 
 - title: Validation and Preflight
