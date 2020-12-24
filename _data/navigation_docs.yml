@@ -55,7 +55,9 @@
 - title: Images
   docs:
   - image_best_practices
+  - block-and-inline-images
   - add-an-image
+  - add-an-inline-image
   - images-with-captions-etc
   - replace-an-image
   - upload-a-cover
