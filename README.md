@@ -7,6 +7,14 @@
 * Make sure the Word file is tagged using Hederis Word styles.
 * If you need to link to other sections of the documentation, create the link in Microsoft Word, and link to the required .docx file. This link will automatically be converted to a link to the final post, and the link text will be replaced with the linked .docx title.
 
+## Test Locally
+
+Run:
+
+```
+bundle exec jekyll serve
+```
+
 ## Generating
 
 ### To Convert a Single File:
