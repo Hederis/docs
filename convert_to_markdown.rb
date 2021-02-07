@@ -42,17 +42,19 @@ if ARGV[0]
 else
   all_files = Dir[__dir__ + "/_word/*.docx"]
   all_files.each do |f|
-    puts f
-    filename = f.split("/").pop().gsub(".docx",".md")
-    puts filename
-    res = `python3 /Users/nellie/git/hederis/hederis2/api/convert_docs.py #{f} #{$directory}/_html/`
-    puts "RESULT"
-    res_html = /'fullhtml': '\/Users\/nellie\/git\/hederis\/docs\/_html\/\S+.html/.match(res)
-    puts res_html
-    if res_html[0]
-      final_file = res_html[0].gsub(/'fullhtml': '/,"")
-      puts final_file
-      process_file(final_file,filename)
+    unless f.match(/\/IMPORT_/)
+      puts f
+      filename = f.split("/").pop().gsub(".docx",".md")
+      puts filename
+      res = `python3 /Users/nellie/git/hederis/hederis2/api/convert_docs.py #{f} #{$directory}/_html/`
+      puts "RESULT"
+      res_html = /'fullhtml': '\/Users\/nellie\/git\/hederis\/docs\/_html\/\S+.html/.match(res)
+      puts res_html
+      if res_html[0]
+        final_file = res_html[0].gsub(/'fullhtml': '/,"")
+        puts final_file
+        process_file(final_file,filename)
+      end
     end
   end
 end

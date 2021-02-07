@@ -32,6 +32,7 @@ ruby convert_to_markdown.rb _html/html_file.html
 
 ### To Convert All Files At Once:
 
+* Make sure all Word files are closed (otherwise they will throw an error).
 * Run the convert_to_markdown script without any arguments, as follows. Note that it requires the presence of the convert_docs.py script in the main hederis repo.
 
 ```
