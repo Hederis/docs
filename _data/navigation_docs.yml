@@ -70,6 +70,7 @@
 - title: Validation and Preflight
   docs:
   - epub-validation
+  - font-warnings
   - convert-to-kindle
   - pdf-preflight
 
