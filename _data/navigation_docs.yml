@@ -49,8 +49,6 @@
 - title: Paging
   docs:
   - chapter-start-recto
-  - page-locking
-  - locked-changes
   - page-layout-menu
 
 - title: Images
