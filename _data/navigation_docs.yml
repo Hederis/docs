@@ -37,6 +37,7 @@
   - typeset-sect-design
   - typeset-box-design
   - typeset-para-design
+  - center-a-block
   - custom-font
   - selectors
   - design-settings-and-inheritance
@@ -64,7 +65,6 @@
   - upload-a-cover
   - include-full-page-images
   - resize-images
-  - center-an-image
   - grayscale-images
 
 - title: Validation and Preflight
