@@ -8,6 +8,7 @@
 - title: "File Management, Uploads, and Downloads"
   docs:
   - upload-a-manuscript
+  - builds
   - snapshots
 
 - title: Working with Book Text
