@@ -30,6 +30,7 @@
 - title: Design
   docs:
   - design-templates
+  - pdf-epub-templates
   - typeset-view-toolbar
   - baseline-grid
   - typeset-left-sidebar
@@ -82,6 +83,7 @@
   - about-groups
   - create-group
   - group-billing
+  - invite-collaborator
 
 - title: How Do I…
   docs:
