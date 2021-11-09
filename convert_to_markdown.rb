@@ -46,7 +46,7 @@ else
       puts f
       filename = f.split("/").pop().gsub(".docx",".md")
       puts filename
-      res = `python3 /Users/nellie/git/hederis/hederis2/api/convert_docs.py #{f} #{$directory}/_html/`
+      res = `python3 /Users/nellie/git/hederis/hederis/api/convert_docs.py #{f} #{$directory}/_html/`
       puts "RESULT"
       res_html = /'fullhtml': '\/Users\/nellie\/git\/hederis\/docs\/_html\/\S+.html/.match(res)
       puts res_html
