@@ -5,6 +5,15 @@
   - sample-workflow
   - galley_and_digital_mode
 
+- title: Step-by-Step Guide
+  docs:
+  - step-by-step-0
+  - step-by-step-1
+  - step-by-step-2
+  - step-by-step-3
+  - step-by-step-4
+  - step-by-step-5
+
 - title: "File Management, Uploads, and Downloads"
   docs:
   - upload-a-manuscript

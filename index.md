@@ -8,7 +8,9 @@ hero:
     search: true
 ---
 
-{% include boxes.html columns="3" title="Browse Topics" subtitle="Chose an option that you need help with or search above" %}
+{% include step-by-step.html tag="stepbystep" title="Just Getting Started?" subtitle="Check out our step-by-step guide to get up-and-running in Hederis" %}
+
+{% include boxes.html columns="3" title="Browse Topics" subtitle="Choose an option that you need help with or search above" %}
 
 {% include featured.html tag="featured" title="Popular Articles" subtitle="Selected featured articles to get you started fast" %}
 
