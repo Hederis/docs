@@ -30,8 +30,10 @@ aside[data-hederis-type="hwprbox"] {
   margin: 15px 0 15px 20px;
 }
 
-aside[data-hederis-type="hwprbox"] p[data-hederis-type="hblktype"] {
+aside[data-hederis-type="hwprbox"] p[data-hederis-type="hblktype"],
+div[data-hederis-type="hwprbox"] p[data-hederis-type="hblktype"] {
   font-weight: bold;
+  color: #05c896;
 }
 
 img[data-hederis-type="hblkimg"] {
@@ -46,6 +48,13 @@ p[data-hederis-type="hblkcaption"] {
 p[data-hederis-type="hblkh1"] {
   font-size: 1.6rem;
   font-weight: bold;
+}
+
+div[data-hederis-type="hwprbox"] {
+  border: 1px solid #05c896;
+  padding: 10px;
+  margin: 20px 0 20px;
+  border-radius: 3px;
 }
 
 *[data-step-type="dashboard"],
