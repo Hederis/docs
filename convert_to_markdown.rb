@@ -20,7 +20,8 @@ def process_file(input, output)
 
   # change link formatting
 
-  content = content.gsub(/(href=")((?!http)\S)+(docx)/, "\\1{% link _docs/\\2md %}")
+  content = content.gsub(/(href=")((?!http)\S+)(docx)/, "\\1{% link _docs/\\2md %}")
+  content = content.gsub(/(link _docs\/)(file:\S+\/)([^\/]+.md)/, "\\1\\3")
   puts $directory
   File.open($directory + "/_docs/" + filename, 'w') do |f|
     f.puts "---"
