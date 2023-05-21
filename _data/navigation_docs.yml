@@ -18,6 +18,7 @@
   docs:
   - upload-a-manuscript
   - builds
+  - idml
   - snapshots
 
 - title: Working with Book Text
